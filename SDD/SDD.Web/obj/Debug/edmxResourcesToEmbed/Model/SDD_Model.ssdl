@@ -1,0 +1,1651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SiDedy_Default_v1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AparaturDesa">
+    <Key>
+      <PropertyRef Name="IdAparaturDesa" />
+    </Key>
+    <Property Name="IdAparaturDesa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="IdDesa" Type="bigint" />
+    <Property Name="IdJabatan" Type="int" />
+    <Property Name="StatusAparatur" Type="int" />
+    <Property Name="PeriodeAwal" Type="date" />
+    <Property Name="PeriodeAkhir" Type="date" />
+    <Property Name="DescAparaturDesa" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DetailAktaLahir">
+    <Key>
+      <PropertyRef Name="IdDetailAktaLahir" />
+    </Key>
+    <Property Name="IdDetailAktaLahir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdAktaLahir" Type="int" />
+    <Property Name="NamaSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirSaksi" Type="date" />
+    <Property Name="PekerjaanSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="NIKSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DetailFlowForm">
+    <Key>
+      <PropertyRef Name="IdDetailFlowForm" />
+    </Key>
+    <Property Name="IdDetailFlowForm" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFormFlow" Type="int" />
+    <Property Name="IdJabatan" Type="int" />
+    <Property Name="UrutanFlow" Type="int" />
+    <Property Name="SlaDetail" Type="int" />
+  </EntityType>
+  <EntityType Name="DetailFormulirKK">
+    <Key>
+      <PropertyRef Name="IdDetailKK" />
+    </Key>
+    <Property Name="IdDetailKK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFormulirKK" Type="int" />
+    <Property Name="IdMasterHub" Type="int" />
+    <Property Name="NIK" Type="varchar" MaxLength="255" />
+    <Property Name="NamaLengkap" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DetailKapalNelayan">
+    <Key>
+      <PropertyRef Name="IdKapalNelayan" />
+    </Key>
+    <Property Name="IdKapalNelayan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUserNelayan" Type="int" />
+    <Property Name="StatusKapal" Type="int" />
+    <Property Name="TypeKapal" Type="varchar" MaxLength="255" />
+    <Property Name="LokasiSandarKapal" Type="varchar" MaxLength="255" />
+    <Property Name="HasilBulanan" Type="money" />
+  </EntityType>
+  <EntityType Name="DetailPekerjan">
+    <Key>
+      <PropertyRef Name="IdDetailPekerjaan" />
+    </Key>
+    <Property Name="IdDetailPekerjaan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUserPekerjaan" Type="int" />
+    <Property Name="PeriodeAwal" Type="date" />
+    <Property Name="PeriodeAkhir" Type="date" />
+    <Property Name="NominalHasil" Type="money" />
+    <Property Name="TotalHasil" Type="decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="DetailUserPerdagangan">
+    <Key>
+      <PropertyRef Name="IdDetailPerdagangan" />
+    </Key>
+    <Property Name="IdDetailPerdagangan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUserPerdagangan" Type="int" />
+    <Property Name="TypeLapak" Type="int" />
+    <Property Name="LuasLapak" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="StatusLapak" Type="int" />
+    <Property Name="AlamatLapak" Type="varchar" MaxLength="255" />
+    <Property Name="JumPekerja" Type="int" />
+    <Property Name="SemuaBiayaBulanan" Type="money" />
+    <Property Name="PenghasilanBulanan" Type="money" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DetailUserPertanian">
+    <Key>
+      <PropertyRef Name="IdDetailPertanian" />
+    </Key>
+    <Property Name="IdDetailPertanian" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdSatuanPendukung" Type="int" />
+    <Property Name="AlatBahanPendukung" Type="varchar" MaxLength="255" />
+    <Property Name="QuantityPendukung" Type="int" />
+    <Property Name="NominalPendukung" Type="money" />
+    <Property Name="TotalNominalPendukung" Type="money" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+    <Property Name="IdUserPertanian" Type="int" />
+  </EntityType>
+  <EntityType Name="DetailUserPeternakanPerikanan">
+    <Key>
+      <PropertyRef Name="IdDetailPeternakan" />
+    </Key>
+    <Property Name="IdDetailPeternakan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdSatuanPendukung" Type="int" />
+    <Property Name="AlatBahanPendukung" Type="varchar" MaxLength="255" />
+    <Property Name="QuantityPendukung" Type="int" />
+    <Property Name="NominalPendukung" Type="money" />
+    <Property Name="TotalNominalPendukung" Type="money" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+    <Property Name="IdUserPerikanan" Type="int" />
+  </EntityType>
+  <EntityType Name="EmailLog">
+    <Key>
+      <PropertyRef Name="IdEmail" />
+    </Key>
+    <Property Name="IdEmail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="From" Type="varchar" MaxLength="255" />
+    <Property Name="To" Type="varchar" MaxLength="255" />
+    <Property Name="Messages" Type="text" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+    <Property Name="LinkContent" Type="varchar" MaxLength="255" />
+    <Property Name="StatusWA" Type="int" />
+  </EntityType>
+  <EntityType Name="Exceptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ApplicationName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsProtected" Type="bit" Nullable="false" />
+    <Property Name="Host" Type="nvarchar" MaxLength="100" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="HTTPMethod" Type="nvarchar" MaxLength="10" />
+    <Property Name="IPAddress" Type="nvarchar" MaxLength="40" />
+    <Property Name="Source" Type="nvarchar" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+    <Property Name="StatusCode" Type="int" />
+    <Property Name="SQL" Type="nvarchar(max)" />
+    <Property Name="DeletionDate" Type="datetime" />
+    <Property Name="FullJson" Type="nvarchar(max)" />
+    <Property Name="ErrorHash" Type="int" />
+    <Property Name="DuplicateCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormulirAktaKelahiran">
+    <Key>
+      <PropertyRef Name="IdFormAktaKelahiran" />
+    </Key>
+    <Property Name="IdFormAktaKelahiran" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFormFlow" Type="int" />
+    <Property Name="IdUserPelapor" Type="int" />
+    <Property Name="NamaBayi" Type="varchar" MaxLength="255" />
+    <Property Name="KelaminBayi" Type="int" />
+    <Property Name="TempatKelahiran" Type="varchar" MaxLength="255" />
+    <Property Name="HariKelahiran" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahir" Type="date" />
+    <Property Name="WaktuKelahiran" Type="time" Precision="7" />
+    <Property Name="JenisKelahiran" Type="int" />
+    <Property Name="BeratBayi" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="PanjangBayi" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="AnakKe" Type="int" />
+    <Property Name="NamaIbu" Type="varchar" MaxLength="255" />
+    <Property Name="NikIbu" Type="varchar" MaxLength="255" />
+    <Property Name="PekerjaanIbu" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirIbu" Type="date" />
+    <Property Name="AlamatIbu" Type="varchar" MaxLength="255" />
+    <Property Name="NamaAyah" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirAyah" Type="date" />
+    <Property Name="PekerjaanAyah" Type="varchar" MaxLength="255" />
+    <Property Name="AlamatAyah" Type="varchar" MaxLength="255" />
+    <Property Name="NikAyah" Type="varchar" MaxLength="255" />
+    <Property Name="LinkDocAkta" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="FormulirKK">
+    <Key>
+      <PropertyRef Name="IdFormulirKK" />
+    </Key>
+    <Property Name="IdFormulirKK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdMasterFlow" Type="int" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="AlasanPemohon" Type="varchar" MaxLength="255" />
+    <Property Name="JumlahKK" Type="int" />
+    <Property Name="DokPendukungKK" Type="varchar" MaxLength="255" />
+    <Property Name="Timestamp" Type="datetime2" Precision="7" />
+    <Property Name="LinkDocKK" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="FormulirKTP">
+    <Key>
+      <PropertyRef Name="IdFormulirKTP" />
+    </Key>
+    <Property Name="IdFormulirKTP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFFowForm" Type="int" />
+    <Property Name="TypePermohonan" Type="varchar" MaxLength="255" />
+    <Property Name="DokPendukung " Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+    <Property Name="LinkDocKTP" Type="varchar" MaxLength="255" />
+    <Property Name="IdUser" Type="int" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LanguageId" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LanguageName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MasterBudidaya">
+    <Key>
+      <PropertyRef Name="IdBudidaya" />
+    </Key>
+    <Property Name="IdBudidaya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdSatuanBudidaya" Type="int" />
+    <Property Name="NamaBudidaya" Type="varchar" MaxLength="255" />
+    <Property Name="IdPekerjaan" Type="int" />
+  </EntityType>
+  <EntityType Name="MasterDesa">
+    <Key>
+      <PropertyRef Name="IdDesa" />
+    </Key>
+    <Property Name="IdDesa" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdKecamatan" Type="int" />
+    <Property Name="NamaDesa" Type="varchar" MaxLength="255" />
+    <Property Name="LantitudeDesa" Type="varchar" MaxLength="255" />
+    <Property Name="LongtitudeDesa" Type="varchar" MaxLength="255" />
+    <Property Name="DescDesa" Type="varchar" MaxLength="255" />
+    <Property Name="LogoDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeDesa" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterFlowFormulir">
+    <Key>
+      <PropertyRef Name="IdFormFlow" />
+    </Key>
+    <Property Name="IdFormFlow" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdMasterForm" Type="int" />
+    <Property Name="Slaform" Type="int" />
+    <Property Name="DescForm" Type="varchar" MaxLength="255" />
+    <Property Name="IdDesa" Type="bigint" />
+  </EntityType>
+  <EntityType Name="MasterFormulir">
+    <Key>
+      <PropertyRef Name="IdFormulir" />
+    </Key>
+    <Property Name="IdFormulir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaFormulir" Type="varchar" MaxLength="255" />
+    <Property Name="DescFormulir" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterHasilBudidaya">
+    <Key>
+      <PropertyRef Name="IdHasilBudidaya" />
+    </Key>
+    <Property Name="IdHasilBudidaya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdMasterBudidaya" Type="int" />
+    <Property Name="NamaHasil" Type="varchar" MaxLength="255" />
+    <Property Name="IdSatuanHasil" Type="int" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterHubungan">
+    <Key>
+      <PropertyRef Name="IdHubungan" />
+    </Key>
+    <Property Name="IdHubungan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="KodeHubungan" Type="varchar" MaxLength="2" />
+    <Property Name="DescHubungan" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterJabatan">
+    <Key>
+      <PropertyRef Name="IdJabatan" />
+    </Key>
+    <Property Name="IdJabatan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaJabatan" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterKabupaten">
+    <Key>
+      <PropertyRef Name="IdKabupaten" />
+    </Key>
+    <Property Name="IdKabupaten" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPropinsi" Type="int" />
+    <Property Name="NamaKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="Langtitudekabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="LongtitudeKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="DescKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="LogoKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKabupaten" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterKecamatan">
+    <Key>
+      <PropertyRef Name="idKecamatan" />
+    </Key>
+    <Property Name="idKecamatan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdKabupaten" Type="int" Nullable="false" />
+    <Property Name="NamaKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="LangtitudeKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="LongtitudeKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="KodePos" Type="varchar" MaxLength="255" />
+    <Property Name="DecKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="LogoKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKecamatan" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterPekerjaan">
+    <Key>
+      <PropertyRef Name="IdPekerjaan" />
+    </Key>
+    <Property Name="IdPekerjaan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaPekerjaan" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterPropinsi">
+    <Key>
+      <PropertyRef Name="IdPropinsi" />
+    </Key>
+    <Property Name="IdPropinsi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="IbuKotaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="LatitudePropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="LongitudePropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="DescPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="LogoPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodePropinsi" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterSatuan">
+    <Key>
+      <PropertyRef Name="IdSatuan" />
+    </Key>
+    <Property Name="IdSatuan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaSatuan" Type="varchar" MaxLength="255" />
+    <Property Name="DescSatuan" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="RolePermissions">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Name="RolePermissionId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="PermissionKey" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StatusFormFlow">
+    <Key>
+      <PropertyRef Name="IdStatusFlow" />
+    </Key>
+    <Property Name="IdStatusFlow" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFormulirKK" Type="int" />
+    <Property Name="IdDetailFlow" Type="int" />
+    <Property Name="StatusFlow" Type="int" />
+    <Property Name="KeteranganFlow" Type="varchar" MaxLength="255" />
+    <Property Name="Timestamp" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="UserKaryawan">
+    <Key>
+      <PropertyRef Name="IdUserKaryawan" />
+    </Key>
+    <Property Name="IdUserKaryawan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="TypePerusahaan" Type="int" />
+    <Property Name="StatusKaryawan" Type="varchar" MaxLength="255" />
+    <Property Name="RatarataPenghasilan" Type="money" />
+    <Property Name="NamaperusahaanUsaha" Type="varchar" MaxLength="255" />
+    <Property Name="AlamatPerusahanUsaha" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="UserNelayan">
+    <Key>
+      <PropertyRef Name="IdUserNelayan" />
+    </Key>
+    <Property Name="IdUserNelayan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="UserPekerjaan">
+    <Key>
+      <PropertyRef Name="IdUserPekerjaan" />
+    </Key>
+    <Property Name="IdUserPekerjaan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="IdPekerjaan" Type="int" />
+    <Property Name="IdBudidaya" Type="int" />
+    <Property Name="UnitPenghasilan" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="PeriodeHasil" Type="int" />
+  </EntityType>
+  <EntityType Name="UserPerdagangan">
+    <Key>
+      <PropertyRef Name="IdUserPerdagangan" />
+    </Key>
+    <Property Name="IdUserPerdagangan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Iduser" Type="int" />
+    <Property Name="NamaBrandToko" Type="varchar" MaxLength="255" />
+    <Property Name="JenisDagangan" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="UserPerikananPeternakan">
+    <Key>
+      <PropertyRef Name="IdUserPerikanan" />
+    </Key>
+    <Property Name="IdUserPerikanan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="IdHasilBudidaya" Type="int" />
+    <Property Name="TotalBibit" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="LuasLahan" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="JumlahPekerja" Type="int" />
+    <Property Name="PeriodePanen" Type="int" />
+    <Property Name="HasilPanen" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="NominalHasilPanen" Type="money" />
+    <Property Name="Option1" Type="int" />
+  </EntityType>
+  <EntityType Name="UserPermissions">
+    <Key>
+      <PropertyRef Name="UserPermissionId" />
+    </Key>
+    <Property Name="UserPermissionId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="PermissionKey" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Granted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPertanianPerkebunan">
+    <Key>
+      <PropertyRef Name="IdUserPertanian" />
+    </Key>
+    <Property Name="IdUserPertanian" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" />
+    <Property Name="IdHasilBudidaya" Type="int" />
+    <Property Name="LuasLahan" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="JumlahPekerja" Type="int" />
+    <Property Name="PeriodePanen" Type="int" />
+    <Property Name="HasilPanen" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="NominalHasilPanen" Type="money" />
+    <Property Name="Option1" Type="int" />
+  </EntityType>
+  <EntityType Name="UserPreferences">
+    <Key>
+      <PropertyRef Name="UserPreferenceId" />
+    </Key>
+    <Property Name="UserPreferenceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="PreferenceType" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Source" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="86" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LastDirectoryUpdate" Type="datetime" />
+    <Property Name="UserImage" Type="nvarchar" MaxLength="100" />
+    <Property Name="InsertDate" Type="datetime" Nullable="false" />
+    <Property Name="InsertUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="IsActive" Type="smallint" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="IdHubungan " Type="int" />
+    <Property Name="NoKTP" Type="varchar" MaxLength="255" />
+    <Property Name="NoKK" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="255" />
+    <Property Name="WaNumber" Type="varchar" MaxLength="255" />
+    <Property Name="Option1" Type="varchar" MaxLength="255" />
+    <Property Name="Option2" Type="varchar" MaxLength="255" />
+    <Property Name="Option3" Type="varchar" MaxLength="255" />
+    <Property Name="JenisKelamin" Type="int" />
+    <Property Name="TanggalLahir" Type="date" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="IdDesa" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.VersionInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VersionInfo">
+    <Key>
+      <PropertyRef Name="Version" />
+    </Key>
+    <Property Name="Version" Type="bigint" Nullable="false" />
+    <Property Name="AppliedOn" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewDetailAktaLahir' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewDetailAktaLahir">
+    <Key>
+      <PropertyRef Name="IdFormAktaKelahiran" />
+      <PropertyRef Name="IdDetailAktaLahir" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="IdFormAktaKelahiran" Type="int" Nullable="false" />
+    <Property Name="NamaBayi" Type="varchar" MaxLength="255" />
+    <Property Name="IdDetailAktaLahir" Type="int" Nullable="false" />
+    <Property Name="NamaSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirSaksi" Type="date" />
+    <Property Name="PekerjaanSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="NIKSaksi" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewDetailFormKK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewDetailFormKK">
+    <Key>
+      <PropertyRef Name="IdDetailKK" />
+      <PropertyRef Name="IdFormulirKK" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="IdDetailKK" Type="int" Nullable="false" />
+    <Property Name="IdMasterHub" Type="int" />
+    <Property Name="NIK" Type="varchar" MaxLength="255" />
+    <Property Name="NamaLengkap" Type="varchar" MaxLength="255" />
+    <Property Name="NamaHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="DescHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="KodeHubungan" Type="varchar" MaxLength="2" />
+    <Property Name="AlasanPemohon" Type="varchar" MaxLength="255" />
+    <Property Name="JumlahKK" Type="int" />
+    <Property Name="IdFormulirKK" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewFormAktaKelahiran' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewFormAktaKelahiran">
+    <Key>
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="JenisKelamin" />
+      <PropertyRef Name="KelaminBayi" />
+      <PropertyRef Name="IdFormAktaKelahiran" />
+      <PropertyRef Name="JenisKelahiran" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="IdHubungan " Type="int" />
+    <Property Name="NoKTP" Type="varchar" MaxLength="255" />
+    <Property Name="NoKK" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="255" />
+    <Property Name="WaNumber" Type="varchar" MaxLength="255" />
+    <Property Name="Option1" Type="varchar" MaxLength="255" />
+    <Property Name="Option2" Type="varchar" MaxLength="255" />
+    <Property Name="Option3" Type="varchar" MaxLength="255" />
+    <Property Name="JenisKelamin" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="TanggalLahir" Type="date" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="IdDesa" Type="bigint" />
+    <Property Name="IdUserPelapor" Type="int" />
+    <Property Name="NamaBayi" Type="varchar" MaxLength="255" />
+    <Property Name="KelaminBayi" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="TempatKelahiran" Type="varchar" MaxLength="255" />
+    <Property Name="IdFormFlow" Type="int" />
+    <Property Name="IdFormAktaKelahiran" Type="int" Nullable="false" />
+    <Property Name="HariKelahiran" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahir" Type="date" />
+    <Property Name="WaktuKelahiran" Type="time" Precision="7" />
+    <Property Name="JenisKelahiran" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="BeratBayi" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="PanjangBayi" Type="decimal" Precision="38" Scale="0" />
+    <Property Name="AnakKe" Type="int" />
+    <Property Name="NamaIbu" Type="varchar" MaxLength="255" />
+    <Property Name="NikIbu" Type="varchar" MaxLength="255" />
+    <Property Name="PekerjaanIbu" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirIbu" Type="date" />
+    <Property Name="AlamatIbu" Type="varchar" MaxLength="255" />
+    <Property Name="NamaAyah" Type="varchar" MaxLength="255" />
+    <Property Name="TglLahirAyah" Type="date" />
+    <Property Name="PekerjaanAyah" Type="varchar" MaxLength="255" />
+    <Property Name="AlamatAyah" Type="varchar" MaxLength="255" />
+    <Property Name="NikAyah" Type="varchar" MaxLength="255" />
+    <Property Name="LinkDocAkta" Type="varchar" MaxLength="255" />
+    <Property Name="NamaDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="KodePos" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="DescKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NamaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="IbuKotaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodePropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="DescPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="NamaHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="KodeHubungan" Type="varchar" MaxLength="2" />
+    <Property Name="DescHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="Nomor" Type="varchar" MaxLength="204" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewFormKK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewFormKK">
+    <Key>
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="JenisKelamin" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="IdFormulirKK" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="IdHubungan " Type="int" />
+    <Property Name="NoKTP" Type="varchar" MaxLength="255" />
+    <Property Name="NoKK" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="255" />
+    <Property Name="WaNumber" Type="varchar" MaxLength="255" />
+    <Property Name="Option1" Type="varchar" MaxLength="255" />
+    <Property Name="Option2" Type="varchar" MaxLength="255" />
+    <Property Name="Option3" Type="varchar" MaxLength="255" />
+    <Property Name="JenisKelamin" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="TanggalLahir" Type="date" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="IdDesa" Type="bigint" />
+    <Property Name="AlasanPemohon" Type="varchar" MaxLength="255" />
+    <Property Name="JumlahKK" Type="int" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime2" Precision="7" />
+    <Property Name="LinkDocKK" Type="varchar" MaxLength="255" />
+    <Property Name="NamaDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NamaHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="DescHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="KodePos" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NamaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="IbuKotaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodePropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="IdFormulirKK" Type="int" Nullable="false" />
+    <Property Name="Nomor" Type="varchar" MaxLength="204" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewFormKTP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewFormKTP">
+    <Key>
+      <PropertyRef Name="IdFormulirKTP" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="JenisKelamin" />
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="IdFormulirKTP" Type="int" Nullable="false" />
+    <Property Name="IdFFowForm" Type="int" />
+    <Property Name="TypePermohonan" Type="varchar" MaxLength="255" />
+    <Property Name="DokPendukung " Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar" MaxLength="255" />
+    <Property Name="LinkDocKTP" Type="varchar" MaxLength="255" />
+    <Property Name="NamaHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="DescHubungan" Type="varchar" MaxLength="255" />
+    <Property Name="NamaDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NamaPropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="IdHubungan " Type="int" />
+    <Property Name="NoKTP" Type="varchar" MaxLength="255" />
+    <Property Name="NoKK" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="255" />
+    <Property Name="WaNumber" Type="varchar" MaxLength="255" />
+    <Property Name="JenisKelamin" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="TanggalLahir" Type="date" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="IdDesa" Type="bigint" />
+    <Property Name="Option1" Type="varchar" MaxLength="255" />
+    <Property Name="Option2" Type="varchar" MaxLength="255" />
+    <Property Name="Option3" Type="varchar" MaxLength="255" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="KodePos" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeKabupaten" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodePropinsi" Type="varchar" MaxLength="255" />
+    <Property Name="NoKodeDesa" Type="varchar" MaxLength="255" />
+    <Property Name="Nomor" Type="varchar" MaxLength="205" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SiDedy_Default_v1.dbo.ViewMaasterForm' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ViewMaasterForm">
+    <Key>
+      <PropertyRef Name="IdFormFlow" />
+      <PropertyRef Name="IdFormulir" />
+    </Key>
+    <Property Name="IdNumber" Type="bigint" />
+    <Property Name="IdFormFlow" Type="int" Nullable="false" />
+    <Property Name="NamaFormulir" Type="varchar" MaxLength="255" />
+    <Property Name="IdFormulir" Type="int" Nullable="false" />
+    <Property Name="Slaform" Type="int" />
+    <Property Name="DescForm" Type="varchar" MaxLength="255" />
+    <Property Name="NamaDesa" Type="varchar" MaxLength="255" />
+    <Property Name="NamaKecamatan" Type="varchar" MaxLength="255" />
+    <Property Name="KodePos" Type="varchar" MaxLength="255" />
+    <Property Name="ReqForm" Type="varchar" MaxLength="463" />
+  </EntityType>
+  <Association Name="FK__AparaturD__IdJab__3A81B327">
+    <End Role="MasterJabatan" Type="Self.MasterJabatan" Multiplicity="0..1" />
+    <End Role="AparaturDesa" Type="Self.AparaturDesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterJabatan">
+        <PropertyRef Name="IdJabatan" />
+      </Principal>
+      <Dependent Role="AparaturDesa">
+        <PropertyRef Name="IdJabatan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AparaturD__IdUse__38996AB5">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="AparaturDesa" Type="Self.AparaturDesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="AparaturDesa">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailFlo__IdFor__5070F446">
+    <End Role="MasterFlowFormulir" Type="Self.MasterFlowFormulir" Multiplicity="0..1" />
+    <End Role="DetailFlowForm" Type="Self.DetailFlowForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterFlowFormulir">
+        <PropertyRef Name="IdFormFlow" />
+      </Principal>
+      <Dependent Role="DetailFlowForm">
+        <PropertyRef Name="IdFormFlow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailFlo__IdJab__5165187F">
+    <End Role="MasterJabatan" Type="Self.MasterJabatan" Multiplicity="0..1" />
+    <End Role="DetailFlowForm" Type="Self.DetailFlowForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterJabatan">
+        <PropertyRef Name="IdJabatan" />
+      </Principal>
+      <Dependent Role="DetailFlowForm">
+        <PropertyRef Name="IdJabatan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailFor__IdFor__245D67DE">
+    <End Role="FormulirKK" Type="Self.FormulirKK" Multiplicity="0..1" />
+    <End Role="DetailFormulirKK" Type="Self.DetailFormulirKK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormulirKK">
+        <PropertyRef Name="IdFormulirKK" />
+      </Principal>
+      <Dependent Role="DetailFormulirKK">
+        <PropertyRef Name="IdFormulirKK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailFor__IdMas__25518C17">
+    <End Role="MasterHubungan" Type="Self.MasterHubungan" Multiplicity="0..1" />
+    <End Role="DetailFormulirKK" Type="Self.DetailFormulirKK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterHubungan">
+        <PropertyRef Name="IdHubungan" />
+      </Principal>
+      <Dependent Role="DetailFormulirKK">
+        <PropertyRef Name="IdMasterHub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailPek__IdUse__47DBAE45">
+    <End Role="UserPekerjaan" Type="Self.UserPekerjaan" Multiplicity="0..1" />
+    <End Role="DetailPekerjan" Type="Self.DetailPekerjan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserPekerjaan">
+        <PropertyRef Name="IdUserPekerjaan" />
+      </Principal>
+      <Dependent Role="DetailPekerjan">
+        <PropertyRef Name="IdUserPekerjaan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailUse__IdSat__693CA210">
+    <End Role="MasterSatuan" Type="Self.MasterSatuan" Multiplicity="0..1" />
+    <End Role="DetailUserPertanian" Type="Self.DetailUserPertanian" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterSatuan">
+        <PropertyRef Name="IdSatuan" />
+      </Principal>
+      <Dependent Role="DetailUserPertanian">
+        <PropertyRef Name="IdSatuanPendukung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FormulirA__IdFor__0C85DE4D">
+    <End Role="MasterFlowFormulir" Type="Self.MasterFlowFormulir" Multiplicity="0..1" />
+    <End Role="FormulirAktaKelahiran" Type="Self.FormulirAktaKelahiran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterFlowFormulir">
+        <PropertyRef Name="IdFormFlow" />
+      </Principal>
+      <Dependent Role="FormulirAktaKelahiran">
+        <PropertyRef Name="IdFormFlow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FormulirA__IdUse__0D7A0286">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="FormulirAktaKelahiran" Type="Self.FormulirAktaKelahiran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="FormulirAktaKelahiran">
+        <PropertyRef Name="IdUserPelapor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FormulirK__IdFFo__07C12930">
+    <End Role="MasterFormulir" Type="Self.MasterFormulir" Multiplicity="0..1" />
+    <End Role="FormulirKTP" Type="Self.FormulirKTP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterFormulir">
+        <PropertyRef Name="IdFormulir" />
+      </Principal>
+      <Dependent Role="FormulirKTP">
+        <PropertyRef Name="IdFFowForm" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FormulirK__IdUse__571DF1D5">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="FormulirKK" Type="Self.FormulirKK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="FormulirKK">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterBud__IdPek__60A75C0F">
+    <End Role="MasterPekerjaan" Type="Self.MasterPekerjaan" Multiplicity="0..1" />
+    <End Role="MasterBudidaya" Type="Self.MasterBudidaya" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterPekerjaan">
+        <PropertyRef Name="IdPekerjaan" />
+      </Principal>
+      <Dependent Role="MasterBudidaya">
+        <PropertyRef Name="IdPekerjaan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterBud__IdSat__3F466844">
+    <End Role="MasterSatuan" Type="Self.MasterSatuan" Multiplicity="0..1" />
+    <End Role="MasterBudidaya" Type="Self.MasterBudidaya" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterSatuan">
+        <PropertyRef Name="IdSatuan" />
+      </Principal>
+      <Dependent Role="MasterBudidaya">
+        <PropertyRef Name="IdSatuanBudidaya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterDes__IdKec__35BCFE0A">
+    <End Role="MasterKecamatan" Type="Self.MasterKecamatan" Multiplicity="0..1" />
+    <End Role="MasterDesa" Type="Self.MasterDesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterKecamatan">
+        <PropertyRef Name="idKecamatan" />
+      </Principal>
+      <Dependent Role="MasterDesa">
+        <PropertyRef Name="IdKecamatan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterFlo__IdMas__4CA06362">
+    <End Role="MasterFormulir" Type="Self.MasterFormulir" Multiplicity="0..1" />
+    <End Role="MasterFlowFormulir" Type="Self.MasterFlowFormulir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterFormulir">
+        <PropertyRef Name="IdFormulir" />
+      </Principal>
+      <Dependent Role="MasterFlowFormulir">
+        <PropertyRef Name="IdMasterForm" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterKab__IdPro__300424B4">
+    <End Role="MasterPropinsi" Type="Self.MasterPropinsi" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MasterKabupaten" Type="Self.MasterKabupaten" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterPropinsi">
+        <PropertyRef Name="IdPropinsi" />
+      </Principal>
+      <Dependent Role="MasterKabupaten">
+        <PropertyRef Name="IdPropinsi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MasterKec__IdKab__32E0915F">
+    <End Role="MasterKabupaten" Type="Self.MasterKabupaten" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MasterKecamatan" Type="Self.MasterKecamatan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterKabupaten">
+        <PropertyRef Name="IdKabupaten" />
+      </Principal>
+      <Dependent Role="MasterKecamatan">
+        <PropertyRef Name="IdKabupaten" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StatusFor__IdDet__5FB337D6">
+    <End Role="DetailFlowForm" Type="Self.DetailFlowForm" Multiplicity="0..1" />
+    <End Role="StatusFormFlow" Type="Self.StatusFormFlow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailFlowForm">
+        <PropertyRef Name="IdDetailFlowForm" />
+      </Principal>
+      <Dependent Role="StatusFormFlow">
+        <PropertyRef Name="IdDetailFlow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StatusFor__IdFor__5EBF139D">
+    <End Role="FormulirKK" Type="Self.FormulirKK" Multiplicity="0..1" />
+    <End Role="StatusFormFlow" Type="Self.StatusFormFlow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormulirKK">
+        <PropertyRef Name="IdFormulirKK" />
+      </Principal>
+      <Dependent Role="StatusFormFlow">
+        <PropertyRef Name="IdFormulirKK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPeker__IdBud__44FF419A">
+    <End Role="MasterBudidaya" Type="Self.MasterBudidaya" Multiplicity="0..1" />
+    <End Role="UserPekerjaan" Type="Self.UserPekerjaan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterBudidaya">
+        <PropertyRef Name="IdBudidaya" />
+      </Principal>
+      <Dependent Role="UserPekerjaan">
+        <PropertyRef Name="IdBudidaya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPeker__IdPek__440B1D61">
+    <End Role="MasterPekerjaan" Type="Self.MasterPekerjaan" Multiplicity="0..1" />
+    <End Role="UserPekerjaan" Type="Self.UserPekerjaan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterPekerjaan">
+        <PropertyRef Name="IdPekerjaan" />
+      </Principal>
+      <Dependent Role="UserPekerjaan">
+        <PropertyRef Name="IdPekerjaan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPeker__IdUse__4316F928">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserPekerjaan" Type="Self.UserPekerjaan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPekerjaan">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPerda__Iduse__208CD6FA">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserPerdagangan" Type="Self.UserPerdagangan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPerdagangan">
+        <PropertyRef Name="Iduser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPerik__IdHas__6EF57B66">
+    <End Role="MasterHasilBudidaya" Type="Self.MasterHasilBudidaya" Multiplicity="0..1" />
+    <End Role="UserPerikananPeternakan" Type="Self.UserPerikananPeternakan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterHasilBudidaya">
+        <PropertyRef Name="IdHasilBudidaya" />
+      </Principal>
+      <Dependent Role="UserPerikananPeternakan">
+        <PropertyRef Name="IdHasilBudidaya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPerik__IdUse__6E01572D">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserPerikananPeternakan" Type="Self.UserPerikananPeternakan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPerikananPeternakan">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPerta__IdHas__6B24EA82">
+    <End Role="MasterHasilBudidaya" Type="Self.MasterHasilBudidaya" Multiplicity="0..1" />
+    <End Role="UserPertanianPerkebunan" Type="Self.UserPertanianPerkebunan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterHasilBudidaya">
+        <PropertyRef Name="IdHasilBudidaya" />
+      </Principal>
+      <Dependent Role="UserPertanianPerkebunan">
+        <PropertyRef Name="IdHasilBudidaya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPerta__IdUse__6A30C649">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserPertanianPerkebunan" Type="Self.UserPertanianPerkebunan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPertanianPerkebunan">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_AktaLahir">
+    <End Role="FormulirAktaKelahiran" Type="Self.FormulirAktaKelahiran" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetailAktaLahir" Type="Self.DetailAktaLahir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormulirAktaKelahiran">
+        <PropertyRef Name="IdFormAktaKelahiran" />
+      </Principal>
+      <Dependent Role="DetailAktaLahir">
+        <PropertyRef Name="IdAktaLahir" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetailNelayan">
+    <End Role="UserNelayan" Type="Self.UserNelayan" Multiplicity="0..1" />
+    <End Role="DetailKapalNelayan" Type="Self.DetailKapalNelayan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserNelayan">
+        <PropertyRef Name="IdUserNelayan" />
+      </Principal>
+      <Dependent Role="DetailKapalNelayan">
+        <PropertyRef Name="IdUserNelayan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_masterBudiDaya">
+    <End Role="MasterBudidaya" Type="Self.MasterBudidaya" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MasterHasilBudidaya" Type="Self.MasterHasilBudidaya" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterBudidaya">
+        <PropertyRef Name="IdBudidaya" />
+      </Principal>
+      <Dependent Role="MasterHasilBudidaya">
+        <PropertyRef Name="IdMasterBudidaya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterDesaAparat">
+    <End Role="MasterDesa" Type="Self.MasterDesa" Multiplicity="0..1" />
+    <End Role="AparaturDesa" Type="Self.AparaturDesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterDesa">
+        <PropertyRef Name="IdDesa" />
+      </Principal>
+      <Dependent Role="AparaturDesa">
+        <PropertyRef Name="IdDesa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterDesaForm">
+    <End Role="MasterDesa" Type="Self.MasterDesa" Multiplicity="0..1" />
+    <End Role="MasterFlowFormulir" Type="Self.MasterFlowFormulir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterDesa">
+        <PropertyRef Name="IdDesa" />
+      </Principal>
+      <Dependent Role="MasterFlowFormulir">
+        <PropertyRef Name="IdDesa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolePermissions_RoleId">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="RolePermissions" Type="Self.RolePermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RolePermissions">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_Satuan">
+    <End Role="MasterSatuan" Type="Self.MasterSatuan" Multiplicity="0..1" />
+    <End Role="MasterHasilBudidaya" Type="Self.MasterHasilBudidaya" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterSatuan">
+        <PropertyRef Name="IdSatuan" />
+      </Principal>
+      <Dependent Role="MasterHasilBudidaya">
+        <PropertyRef Name="IdSatuanHasil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_SatuanPerikanan">
+    <End Role="MasterSatuan" Type="Self.MasterSatuan" Multiplicity="0..1" />
+    <End Role="DetailUserPeternakanPerikanan" Type="Self.DetailUserPeternakanPerikanan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterSatuan">
+        <PropertyRef Name="IdSatuan" />
+      </Principal>
+      <Dependent Role="DetailUserPeternakanPerikanan">
+        <PropertyRef Name="IdSatuanPendukung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_id">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="FormulirKTP" Type="Self.FormulirKTP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="FormulirKTP">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_UserPerdagangan">
+    <End Role="UserPerdagangan" Type="Self.UserPerdagangan" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetailUserPerdagangan" Type="Self.DetailUserPerdagangan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserPerdagangan">
+        <PropertyRef Name="IdUserPerdagangan" />
+      </Principal>
+      <Dependent Role="DetailUserPerdagangan">
+        <PropertyRef Name="IdUserPerdagangan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_UserPerikanan">
+    <End Role="UserPerikananPeternakan" Type="Self.UserPerikananPeternakan" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetailUserPeternakanPerikanan" Type="Self.DetailUserPeternakanPerikanan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserPerikananPeternakan">
+        <PropertyRef Name="IdUserPerikanan" />
+      </Principal>
+      <Dependent Role="DetailUserPeternakanPerikanan">
+        <PropertyRef Name="IdUserPerikanan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPermissions_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserPermissions" Type="Self.UserPermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPermissions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPertanian">
+    <End Role="UserPertanianPerkebunan" Type="Self.UserPertanianPerkebunan" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetailUserPertanian" Type="Self.DetailUserPertanian" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserPertanianPerkebunan">
+        <PropertyRef Name="IdUserPertanian" />
+      </Principal>
+      <Dependent Role="DetailUserPertanian">
+        <PropertyRef Name="IdUserPertanian" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_RoleId">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SiDedy_Default_v1ModelStoreContainer">
+    <EntitySet Name="AparaturDesa" EntityType="Self.AparaturDesa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailAktaLahir" EntityType="Self.DetailAktaLahir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailFlowForm" EntityType="Self.DetailFlowForm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailFormulirKK" EntityType="Self.DetailFormulirKK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailKapalNelayan" EntityType="Self.DetailKapalNelayan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailPekerjan" EntityType="Self.DetailPekerjan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailUserPerdagangan" EntityType="Self.DetailUserPerdagangan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailUserPertanian" EntityType="Self.DetailUserPertanian" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailUserPeternakanPerikanan" EntityType="Self.DetailUserPeternakanPerikanan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmailLog" EntityType="Self.EmailLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exceptions" EntityType="Self.Exceptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FormulirAktaKelahiran" EntityType="Self.FormulirAktaKelahiran" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FormulirKK" EntityType="Self.FormulirKK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FormulirKTP" EntityType="Self.FormulirKTP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Languages" EntityType="Self.Languages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterBudidaya" EntityType="Self.MasterBudidaya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterDesa" EntityType="Self.MasterDesa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterFlowFormulir" EntityType="Self.MasterFlowFormulir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterFormulir" EntityType="Self.MasterFormulir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterHasilBudidaya" EntityType="Self.MasterHasilBudidaya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterHubungan" EntityType="Self.MasterHubungan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterJabatan" EntityType="Self.MasterJabatan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterKabupaten" EntityType="Self.MasterKabupaten" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterKecamatan" EntityType="Self.MasterKecamatan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterPekerjaan" EntityType="Self.MasterPekerjaan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterPropinsi" EntityType="Self.MasterPropinsi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterSatuan" EntityType="Self.MasterSatuan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolePermissions" EntityType="Self.RolePermissions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatusFormFlow" EntityType="Self.StatusFormFlow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserKaryawan" EntityType="Self.UserKaryawan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserNelayan" EntityType="Self.UserNelayan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPekerjaan" EntityType="Self.UserPekerjaan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPerdagangan" EntityType="Self.UserPerdagangan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPerikananPeternakan" EntityType="Self.UserPerikananPeternakan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPermissions" EntityType="Self.UserPermissions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPertanianPerkebunan" EntityType="Self.UserPertanianPerkebunan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPreferences" EntityType="Self.UserPreferences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VersionInfo" EntityType="Self.VersionInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VersionInfo].[Version] AS [Version], 
+    [VersionInfo].[AppliedOn] AS [AppliedOn], 
+    [VersionInfo].[Description] AS [Description]
+    FROM [dbo].[VersionInfo] AS [VersionInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewDetailAktaLahir" EntityType="Self.ViewDetailAktaLahir" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewDetailAktaLahir].[IdNumber] AS [IdNumber], 
+    [ViewDetailAktaLahir].[IdFormAktaKelahiran] AS [IdFormAktaKelahiran], 
+    [ViewDetailAktaLahir].[NamaBayi] AS [NamaBayi], 
+    [ViewDetailAktaLahir].[IdDetailAktaLahir] AS [IdDetailAktaLahir], 
+    [ViewDetailAktaLahir].[NamaSaksi] AS [NamaSaksi], 
+    [ViewDetailAktaLahir].[TglLahirSaksi] AS [TglLahirSaksi], 
+    [ViewDetailAktaLahir].[PekerjaanSaksi] AS [PekerjaanSaksi], 
+    [ViewDetailAktaLahir].[NIKSaksi] AS [NIKSaksi], 
+    [ViewDetailAktaLahir].[Desc] AS [Desc]
+    FROM [dbo].[ViewDetailAktaLahir] AS [ViewDetailAktaLahir]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewDetailFormKK" EntityType="Self.ViewDetailFormKK" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewDetailFormKK].[IdNumber] AS [IdNumber], 
+    [ViewDetailFormKK].[IdDetailKK] AS [IdDetailKK], 
+    [ViewDetailFormKK].[IdMasterHub] AS [IdMasterHub], 
+    [ViewDetailFormKK].[NIK] AS [NIK], 
+    [ViewDetailFormKK].[NamaLengkap] AS [NamaLengkap], 
+    [ViewDetailFormKK].[NamaHubungan] AS [NamaHubungan], 
+    [ViewDetailFormKK].[DescHubungan] AS [DescHubungan], 
+    [ViewDetailFormKK].[KodeHubungan] AS [KodeHubungan], 
+    [ViewDetailFormKK].[AlasanPemohon] AS [AlasanPemohon], 
+    [ViewDetailFormKK].[JumlahKK] AS [JumlahKK], 
+    [ViewDetailFormKK].[IdFormulirKK] AS [IdFormulirKK]
+    FROM [dbo].[ViewDetailFormKK] AS [ViewDetailFormKK]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewFormAktaKelahiran" EntityType="Self.ViewFormAktaKelahiran" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewFormAktaKelahiran].[IdNumber] AS [IdNumber], 
+    [ViewFormAktaKelahiran].[Username] AS [Username], 
+    [ViewFormAktaKelahiran].[DisplayName] AS [DisplayName], 
+    [ViewFormAktaKelahiran].[Email] AS [Email], 
+    [ViewFormAktaKelahiran].[Address] AS [Address], 
+    [ViewFormAktaKelahiran].[IdHubungan ] AS [IdHubungan ], 
+    [ViewFormAktaKelahiran].[NoKTP] AS [NoKTP], 
+    [ViewFormAktaKelahiran].[NoKK] AS [NoKK], 
+    [ViewFormAktaKelahiran].[PhoneNumber] AS [PhoneNumber], 
+    [ViewFormAktaKelahiran].[WaNumber] AS [WaNumber], 
+    [ViewFormAktaKelahiran].[Option1] AS [Option1], 
+    [ViewFormAktaKelahiran].[Option2] AS [Option2], 
+    [ViewFormAktaKelahiran].[Option3] AS [Option3], 
+    [ViewFormAktaKelahiran].[JenisKelamin] AS [JenisKelamin], 
+    [ViewFormAktaKelahiran].[TanggalLahir] AS [TanggalLahir], 
+    [ViewFormAktaKelahiran].[Description] AS [Description], 
+    [ViewFormAktaKelahiran].[IdDesa] AS [IdDesa], 
+    [ViewFormAktaKelahiran].[IdUserPelapor] AS [IdUserPelapor], 
+    [ViewFormAktaKelahiran].[NamaBayi] AS [NamaBayi], 
+    [ViewFormAktaKelahiran].[KelaminBayi] AS [KelaminBayi], 
+    [ViewFormAktaKelahiran].[TempatKelahiran] AS [TempatKelahiran], 
+    [ViewFormAktaKelahiran].[IdFormFlow] AS [IdFormFlow], 
+    [ViewFormAktaKelahiran].[IdFormAktaKelahiran] AS [IdFormAktaKelahiran], 
+    [ViewFormAktaKelahiran].[HariKelahiran] AS [HariKelahiran], 
+    [ViewFormAktaKelahiran].[TglLahir] AS [TglLahir], 
+    [ViewFormAktaKelahiran].[WaktuKelahiran] AS [WaktuKelahiran], 
+    [ViewFormAktaKelahiran].[JenisKelahiran] AS [JenisKelahiran], 
+    [ViewFormAktaKelahiran].[BeratBayi] AS [BeratBayi], 
+    [ViewFormAktaKelahiran].[PanjangBayi] AS [PanjangBayi], 
+    [ViewFormAktaKelahiran].[AnakKe] AS [AnakKe], 
+    [ViewFormAktaKelahiran].[NamaIbu] AS [NamaIbu], 
+    [ViewFormAktaKelahiran].[NikIbu] AS [NikIbu], 
+    [ViewFormAktaKelahiran].[PekerjaanIbu] AS [PekerjaanIbu], 
+    [ViewFormAktaKelahiran].[TglLahirIbu] AS [TglLahirIbu], 
+    [ViewFormAktaKelahiran].[AlamatIbu] AS [AlamatIbu], 
+    [ViewFormAktaKelahiran].[NamaAyah] AS [NamaAyah], 
+    [ViewFormAktaKelahiran].[TglLahirAyah] AS [TglLahirAyah], 
+    [ViewFormAktaKelahiran].[PekerjaanAyah] AS [PekerjaanAyah], 
+    [ViewFormAktaKelahiran].[AlamatAyah] AS [AlamatAyah], 
+    [ViewFormAktaKelahiran].[NikAyah] AS [NikAyah], 
+    [ViewFormAktaKelahiran].[LinkDocAkta] AS [LinkDocAkta], 
+    [ViewFormAktaKelahiran].[NamaDesa] AS [NamaDesa], 
+    [ViewFormAktaKelahiran].[NoKodeDesa] AS [NoKodeDesa], 
+    [ViewFormAktaKelahiran].[NamaKecamatan] AS [NamaKecamatan], 
+    [ViewFormAktaKelahiran].[KodePos] AS [KodePos], 
+    [ViewFormAktaKelahiran].[NoKodeKecamatan] AS [NoKodeKecamatan], 
+    [ViewFormAktaKelahiran].[NamaKabupaten] AS [NamaKabupaten], 
+    [ViewFormAktaKelahiran].[DescKabupaten] AS [DescKabupaten], 
+    [ViewFormAktaKelahiran].[NoKodeKabupaten] AS [NoKodeKabupaten], 
+    [ViewFormAktaKelahiran].[NamaPropinsi] AS [NamaPropinsi], 
+    [ViewFormAktaKelahiran].[IbuKotaPropinsi] AS [IbuKotaPropinsi], 
+    [ViewFormAktaKelahiran].[NoKodePropinsi] AS [NoKodePropinsi], 
+    [ViewFormAktaKelahiran].[DescPropinsi] AS [DescPropinsi], 
+    [ViewFormAktaKelahiran].[NamaHubungan] AS [NamaHubungan], 
+    [ViewFormAktaKelahiran].[KodeHubungan] AS [KodeHubungan], 
+    [ViewFormAktaKelahiran].[DescHubungan] AS [DescHubungan], 
+    [ViewFormAktaKelahiran].[Nomor] AS [Nomor]
+    FROM [dbo].[ViewFormAktaKelahiran] AS [ViewFormAktaKelahiran]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewFormKK" EntityType="Self.ViewFormKK" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewFormKK].[IdNumber] AS [IdNumber], 
+    [ViewFormKK].[DisplayName] AS [DisplayName], 
+    [ViewFormKK].[Username] AS [Username], 
+    [ViewFormKK].[Email] AS [Email], 
+    [ViewFormKK].[Address] AS [Address], 
+    [ViewFormKK].[IdHubungan ] AS [IdHubungan ], 
+    [ViewFormKK].[NoKTP] AS [NoKTP], 
+    [ViewFormKK].[NoKK] AS [NoKK], 
+    [ViewFormKK].[PhoneNumber] AS [PhoneNumber], 
+    [ViewFormKK].[WaNumber] AS [WaNumber], 
+    [ViewFormKK].[Option1] AS [Option1], 
+    [ViewFormKK].[Option2] AS [Option2], 
+    [ViewFormKK].[Option3] AS [Option3], 
+    [ViewFormKK].[JenisKelamin] AS [JenisKelamin], 
+    [ViewFormKK].[TanggalLahir] AS [TanggalLahir], 
+    [ViewFormKK].[Description] AS [Description], 
+    [ViewFormKK].[IdDesa] AS [IdDesa], 
+    [ViewFormKK].[AlasanPemohon] AS [AlasanPemohon], 
+    [ViewFormKK].[JumlahKK] AS [JumlahKK], 
+    [ViewFormKK].[UserId] AS [UserId], 
+    [ViewFormKK].[Timestamp] AS [Timestamp], 
+    [ViewFormKK].[LinkDocKK] AS [LinkDocKK], 
+    [ViewFormKK].[NamaDesa] AS [NamaDesa], 
+    [ViewFormKK].[NoKodeDesa] AS [NoKodeDesa], 
+    [ViewFormKK].[NamaHubungan] AS [NamaHubungan], 
+    [ViewFormKK].[DescHubungan] AS [DescHubungan], 
+    [ViewFormKK].[NamaKecamatan] AS [NamaKecamatan], 
+    [ViewFormKK].[NoKodeKecamatan] AS [NoKodeKecamatan], 
+    [ViewFormKK].[KodePos] AS [KodePos], 
+    [ViewFormKK].[NamaKabupaten] AS [NamaKabupaten], 
+    [ViewFormKK].[NoKodeKabupaten] AS [NoKodeKabupaten], 
+    [ViewFormKK].[NamaPropinsi] AS [NamaPropinsi], 
+    [ViewFormKK].[IbuKotaPropinsi] AS [IbuKotaPropinsi], 
+    [ViewFormKK].[NoKodePropinsi] AS [NoKodePropinsi], 
+    [ViewFormKK].[IdFormulirKK] AS [IdFormulirKK], 
+    [ViewFormKK].[Nomor] AS [Nomor]
+    FROM [dbo].[ViewFormKK] AS [ViewFormKK]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewFormKTP" EntityType="Self.ViewFormKTP" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewFormKTP].[IdNumber] AS [IdNumber], 
+    [ViewFormKTP].[IdFormulirKTP] AS [IdFormulirKTP], 
+    [ViewFormKTP].[IdFFowForm] AS [IdFFowForm], 
+    [ViewFormKTP].[TypePermohonan] AS [TypePermohonan], 
+    [ViewFormKTP].[DokPendukung ] AS [DokPendukung ], 
+    [ViewFormKTP].[Desc] AS [Desc], 
+    [ViewFormKTP].[LinkDocKTP] AS [LinkDocKTP], 
+    [ViewFormKTP].[NamaHubungan] AS [NamaHubungan], 
+    [ViewFormKTP].[DescHubungan] AS [DescHubungan], 
+    [ViewFormKTP].[NamaDesa] AS [NamaDesa], 
+    [ViewFormKTP].[NamaKecamatan] AS [NamaKecamatan], 
+    [ViewFormKTP].[NamaKabupaten] AS [NamaKabupaten], 
+    [ViewFormKTP].[NamaPropinsi] AS [NamaPropinsi], 
+    [ViewFormKTP].[DisplayName] AS [DisplayName], 
+    [ViewFormKTP].[Email] AS [Email], 
+    [ViewFormKTP].[UserId] AS [UserId], 
+    [ViewFormKTP].[Address] AS [Address], 
+    [ViewFormKTP].[IdHubungan ] AS [IdHubungan ], 
+    [ViewFormKTP].[NoKTP] AS [NoKTP], 
+    [ViewFormKTP].[NoKK] AS [NoKK], 
+    [ViewFormKTP].[PhoneNumber] AS [PhoneNumber], 
+    [ViewFormKTP].[WaNumber] AS [WaNumber], 
+    [ViewFormKTP].[JenisKelamin] AS [JenisKelamin], 
+    [ViewFormKTP].[TanggalLahir] AS [TanggalLahir], 
+    [ViewFormKTP].[Description] AS [Description], 
+    [ViewFormKTP].[IdDesa] AS [IdDesa], 
+    [ViewFormKTP].[Option1] AS [Option1], 
+    [ViewFormKTP].[Option2] AS [Option2], 
+    [ViewFormKTP].[Option3] AS [Option3], 
+    [ViewFormKTP].[Username] AS [Username], 
+    [ViewFormKTP].[KodePos] AS [KodePos], 
+    [ViewFormKTP].[NoKodeKecamatan] AS [NoKodeKecamatan], 
+    [ViewFormKTP].[NoKodeKabupaten] AS [NoKodeKabupaten], 
+    [ViewFormKTP].[NoKodePropinsi] AS [NoKodePropinsi], 
+    [ViewFormKTP].[NoKodeDesa] AS [NoKodeDesa], 
+    [ViewFormKTP].[Nomor] AS [Nomor]
+    FROM [dbo].[ViewFormKTP] AS [ViewFormKTP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ViewMaasterForm" EntityType="Self.ViewMaasterForm" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ViewMaasterForm].[IdNumber] AS [IdNumber], 
+    [ViewMaasterForm].[IdFormFlow] AS [IdFormFlow], 
+    [ViewMaasterForm].[NamaFormulir] AS [NamaFormulir], 
+    [ViewMaasterForm].[IdFormulir] AS [IdFormulir], 
+    [ViewMaasterForm].[Slaform] AS [Slaform], 
+    [ViewMaasterForm].[DescForm] AS [DescForm], 
+    [ViewMaasterForm].[NamaDesa] AS [NamaDesa], 
+    [ViewMaasterForm].[NamaKecamatan] AS [NamaKecamatan], 
+    [ViewMaasterForm].[KodePos] AS [KodePos], 
+    [ViewMaasterForm].[ReqForm] AS [ReqForm]
+    FROM [dbo].[ViewMaasterForm] AS [ViewMaasterForm]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__AparaturD__IdJab__3A81B327" Association="Self.FK__AparaturD__IdJab__3A81B327">
+      <End Role="MasterJabatan" EntitySet="MasterJabatan" />
+      <End Role="AparaturDesa" EntitySet="AparaturDesa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AparaturD__IdUse__38996AB5" Association="Self.FK__AparaturD__IdUse__38996AB5">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AparaturDesa" EntitySet="AparaturDesa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailFlo__IdFor__5070F446" Association="Self.FK__DetailFlo__IdFor__5070F446">
+      <End Role="MasterFlowFormulir" EntitySet="MasterFlowFormulir" />
+      <End Role="DetailFlowForm" EntitySet="DetailFlowForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailFlo__IdJab__5165187F" Association="Self.FK__DetailFlo__IdJab__5165187F">
+      <End Role="MasterJabatan" EntitySet="MasterJabatan" />
+      <End Role="DetailFlowForm" EntitySet="DetailFlowForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailFor__IdFor__245D67DE" Association="Self.FK__DetailFor__IdFor__245D67DE">
+      <End Role="FormulirKK" EntitySet="FormulirKK" />
+      <End Role="DetailFormulirKK" EntitySet="DetailFormulirKK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailFor__IdMas__25518C17" Association="Self.FK__DetailFor__IdMas__25518C17">
+      <End Role="MasterHubungan" EntitySet="MasterHubungan" />
+      <End Role="DetailFormulirKK" EntitySet="DetailFormulirKK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailPek__IdUse__47DBAE45" Association="Self.FK__DetailPek__IdUse__47DBAE45">
+      <End Role="UserPekerjaan" EntitySet="UserPekerjaan" />
+      <End Role="DetailPekerjan" EntitySet="DetailPekerjan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailUse__IdSat__693CA210" Association="Self.FK__DetailUse__IdSat__693CA210">
+      <End Role="MasterSatuan" EntitySet="MasterSatuan" />
+      <End Role="DetailUserPertanian" EntitySet="DetailUserPertanian" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FormulirA__IdFor__0C85DE4D" Association="Self.FK__FormulirA__IdFor__0C85DE4D">
+      <End Role="MasterFlowFormulir" EntitySet="MasterFlowFormulir" />
+      <End Role="FormulirAktaKelahiran" EntitySet="FormulirAktaKelahiran" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FormulirA__IdUse__0D7A0286" Association="Self.FK__FormulirA__IdUse__0D7A0286">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FormulirAktaKelahiran" EntitySet="FormulirAktaKelahiran" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FormulirK__IdFFo__07C12930" Association="Self.FK__FormulirK__IdFFo__07C12930">
+      <End Role="MasterFormulir" EntitySet="MasterFormulir" />
+      <End Role="FormulirKTP" EntitySet="FormulirKTP" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FormulirK__IdUse__571DF1D5" Association="Self.FK__FormulirK__IdUse__571DF1D5">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FormulirKK" EntitySet="FormulirKK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterBud__IdPek__60A75C0F" Association="Self.FK__MasterBud__IdPek__60A75C0F">
+      <End Role="MasterPekerjaan" EntitySet="MasterPekerjaan" />
+      <End Role="MasterBudidaya" EntitySet="MasterBudidaya" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterBud__IdSat__3F466844" Association="Self.FK__MasterBud__IdSat__3F466844">
+      <End Role="MasterSatuan" EntitySet="MasterSatuan" />
+      <End Role="MasterBudidaya" EntitySet="MasterBudidaya" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterDes__IdKec__35BCFE0A" Association="Self.FK__MasterDes__IdKec__35BCFE0A">
+      <End Role="MasterKecamatan" EntitySet="MasterKecamatan" />
+      <End Role="MasterDesa" EntitySet="MasterDesa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterFlo__IdMas__4CA06362" Association="Self.FK__MasterFlo__IdMas__4CA06362">
+      <End Role="MasterFormulir" EntitySet="MasterFormulir" />
+      <End Role="MasterFlowFormulir" EntitySet="MasterFlowFormulir" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterKab__IdPro__300424B4" Association="Self.FK__MasterKab__IdPro__300424B4">
+      <End Role="MasterPropinsi" EntitySet="MasterPropinsi" />
+      <End Role="MasterKabupaten" EntitySet="MasterKabupaten" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MasterKec__IdKab__32E0915F" Association="Self.FK__MasterKec__IdKab__32E0915F">
+      <End Role="MasterKabupaten" EntitySet="MasterKabupaten" />
+      <End Role="MasterKecamatan" EntitySet="MasterKecamatan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StatusFor__IdDet__5FB337D6" Association="Self.FK__StatusFor__IdDet__5FB337D6">
+      <End Role="DetailFlowForm" EntitySet="DetailFlowForm" />
+      <End Role="StatusFormFlow" EntitySet="StatusFormFlow" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StatusFor__IdFor__5EBF139D" Association="Self.FK__StatusFor__IdFor__5EBF139D">
+      <End Role="FormulirKK" EntitySet="FormulirKK" />
+      <End Role="StatusFormFlow" EntitySet="StatusFormFlow" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPeker__IdBud__44FF419A" Association="Self.FK__UserPeker__IdBud__44FF419A">
+      <End Role="MasterBudidaya" EntitySet="MasterBudidaya" />
+      <End Role="UserPekerjaan" EntitySet="UserPekerjaan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPeker__IdPek__440B1D61" Association="Self.FK__UserPeker__IdPek__440B1D61">
+      <End Role="MasterPekerjaan" EntitySet="MasterPekerjaan" />
+      <End Role="UserPekerjaan" EntitySet="UserPekerjaan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPeker__IdUse__4316F928" Association="Self.FK__UserPeker__IdUse__4316F928">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserPekerjaan" EntitySet="UserPekerjaan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPerda__Iduse__208CD6FA" Association="Self.FK__UserPerda__Iduse__208CD6FA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserPerdagangan" EntitySet="UserPerdagangan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPerik__IdHas__6EF57B66" Association="Self.FK__UserPerik__IdHas__6EF57B66">
+      <End Role="MasterHasilBudidaya" EntitySet="MasterHasilBudidaya" />
+      <End Role="UserPerikananPeternakan" EntitySet="UserPerikananPeternakan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPerik__IdUse__6E01572D" Association="Self.FK__UserPerik__IdUse__6E01572D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserPerikananPeternakan" EntitySet="UserPerikananPeternakan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPerta__IdHas__6B24EA82" Association="Self.FK__UserPerta__IdHas__6B24EA82">
+      <End Role="MasterHasilBudidaya" EntitySet="MasterHasilBudidaya" />
+      <End Role="UserPertanianPerkebunan" EntitySet="UserPertanianPerkebunan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPerta__IdUse__6A30C649" Association="Self.FK__UserPerta__IdUse__6A30C649">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserPertanianPerkebunan" EntitySet="UserPertanianPerkebunan" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_AktaLahir" Association="Self.Fk_AktaLahir">
+      <End Role="FormulirAktaKelahiran" EntitySet="FormulirAktaKelahiran" />
+      <End Role="DetailAktaLahir" EntitySet="DetailAktaLahir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetailNelayan" Association="Self.FK_DetailNelayan">
+      <End Role="UserNelayan" EntitySet="UserNelayan" />
+      <End Role="DetailKapalNelayan" EntitySet="DetailKapalNelayan" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_masterBudiDaya" Association="Self.Fk_masterBudiDaya">
+      <End Role="MasterBudidaya" EntitySet="MasterBudidaya" />
+      <End Role="MasterHasilBudidaya" EntitySet="MasterHasilBudidaya" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterDesaAparat" Association="Self.FK_MasterDesaAparat">
+      <End Role="MasterDesa" EntitySet="MasterDesa" />
+      <End Role="AparaturDesa" EntitySet="AparaturDesa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterDesaForm" Association="Self.FK_MasterDesaForm">
+      <End Role="MasterDesa" EntitySet="MasterDesa" />
+      <End Role="MasterFlowFormulir" EntitySet="MasterFlowFormulir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolePermissions_RoleId" Association="Self.FK_RolePermissions_RoleId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RolePermissions" EntitySet="RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_Satuan" Association="Self.Fk_Satuan">
+      <End Role="MasterSatuan" EntitySet="MasterSatuan" />
+      <End Role="MasterHasilBudidaya" EntitySet="MasterHasilBudidaya" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_SatuanPerikanan" Association="Self.Fk_SatuanPerikanan">
+      <End Role="MasterSatuan" EntitySet="MasterSatuan" />
+      <End Role="DetailUserPeternakanPerikanan" EntitySet="DetailUserPeternakanPerikanan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_id" Association="Self.FK_User_id">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FormulirKTP" EntitySet="FormulirKTP" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_UserPerdagangan" Association="Self.Fk_UserPerdagangan">
+      <End Role="UserPerdagangan" EntitySet="UserPerdagangan" />
+      <End Role="DetailUserPerdagangan" EntitySet="DetailUserPerdagangan" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_UserPerikanan" Association="Self.Fk_UserPerikanan">
+      <End Role="UserPerikananPeternakan" EntitySet="UserPerikananPeternakan" />
+      <End Role="DetailUserPeternakanPerikanan" EntitySet="DetailUserPeternakanPerikanan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPermissions_UserId" Association="Self.FK_UserPermissions_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserPermissions" EntitySet="UserPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPertanian" Association="Self.FK_UserPertanian">
+      <End Role="UserPertanianPerkebunan" EntitySet="UserPertanianPerkebunan" />
+      <End Role="DetailUserPertanian" EntitySet="DetailUserPertanian" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_RoleId" Association="Self.FK_UserRoles_RoleId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_UserId" Association="Self.FK_UserRoles_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

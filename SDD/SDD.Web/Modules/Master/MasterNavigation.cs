@@ -1,0 +1,18 @@
+﻿using Serenity.Navigation;
+using MyPages = SDD.Master.Pages;
+[assembly: NavigationMenu(11000, "Master", icon: "fa-database")]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Hubungan", typeof(MyPages.MasterHubunganController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Jabatan", typeof(MyPages.MasterJabatanController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Satuan", typeof(MyPages.MasterSatuanController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Pekerjaan", typeof(MyPages.MasterPekerjaanController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Budidaya", typeof(MyPages.MasterBudidayaController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "Master/Master Hasil Budidaya", typeof(MyPages.MasterHasilBudidayaController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Propinsi", typeof(MyPages.MasterPropinsiController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Kabupaten", typeof(MyPages.MasterKabupatenController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Kecamatan", typeof(MyPages.MasterKecamatanController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Desa", typeof(MyPages.MasterDesaController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Formulir", typeof(MyPages.MasterFormulirController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Status", typeof(MyPages.MasterStatusController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Version", typeof(MyPages.MasterVersionController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Forum", typeof(MyPages.MasterForumController), icon: null)]
+[assembly: NavigationLink(int.MaxValue, "Master/Master Tujuan Pengaduan", typeof(MyPages.MasterTujuanPengaduanController), icon: null)]

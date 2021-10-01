@@ -1,0 +1,1221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SiDedy_Default_v1ModelStoreContainer" CdmEntityContainer="SiDedy_Default_v1Entities">
+    <EntitySetMapping Name="AparaturDesas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.AparaturDesa">
+        <MappingFragment StoreEntitySet="AparaturDesa">
+          <ScalarProperty Name="DescAparaturDesa" ColumnName="DescAparaturDesa" />
+          <ScalarProperty Name="PeriodeAkhir" ColumnName="PeriodeAkhir" />
+          <ScalarProperty Name="PeriodeAwal" ColumnName="PeriodeAwal" />
+          <ScalarProperty Name="StatusAparatur" ColumnName="StatusAparatur" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdAparaturDesa" ColumnName="IdAparaturDesa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banners">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Banner">
+        <MappingFragment StoreEntitySet="Banner">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StatusAktif" ColumnName="StatusAktif" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="UrlImage" ColumnName="UrlImage" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdBanner" ColumnName="IdBanner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailAktaLahirs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailAktaLahir">
+        <MappingFragment StoreEntitySet="DetailAktaLahir">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="NIKSaksi" ColumnName="NIKSaksi" />
+          <ScalarProperty Name="PekerjaanSaksi" ColumnName="PekerjaanSaksi" />
+          <ScalarProperty Name="TglLahirSaksi" ColumnName="TglLahirSaksi" />
+          <ScalarProperty Name="NamaSaksi" ColumnName="NamaSaksi" />
+          <ScalarProperty Name="IdAktaLahir" ColumnName="IdAktaLahir" />
+          <ScalarProperty Name="IdDetailAktaLahir" ColumnName="IdDetailAktaLahir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailFlowForms">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailFlowForm">
+        <MappingFragment StoreEntitySet="DetailFlowForm">
+          <ScalarProperty Name="SlaDetail" ColumnName="SlaDetail" />
+          <ScalarProperty Name="UrutanFlow" ColumnName="UrutanFlow" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+          <ScalarProperty Name="IdDetailFlowForm" ColumnName="IdDetailFlowForm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailFormulirKKs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailFormulirKK">
+        <MappingFragment StoreEntitySet="DetailFormulirKK">
+          <ScalarProperty Name="NamaLengkap" ColumnName="NamaLengkap" />
+          <ScalarProperty Name="NIK" ColumnName="NIK" />
+          <ScalarProperty Name="IdMasterHub" ColumnName="IdMasterHub" />
+          <ScalarProperty Name="IdFormulirKK" ColumnName="IdFormulirKK" />
+          <ScalarProperty Name="IdDetailKK" ColumnName="IdDetailKK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailForums">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailForum">
+        <MappingFragment StoreEntitySet="DetailForum">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="FotoDokumenRespon" ColumnName="FotoDokumenRespon" />
+          <ScalarProperty Name="DetailRespon" ColumnName="DetailRespon" />
+          <ScalarProperty Name="IdUserRespon" ColumnName="IdUserRespon" />
+          <ScalarProperty Name="IdForum" ColumnName="IdForum" />
+          <ScalarProperty Name="IdDetailForum" ColumnName="IdDetailForum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailKapalNelayans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailKapalNelayan">
+        <MappingFragment StoreEntitySet="DetailKapalNelayan">
+          <ScalarProperty Name="HasilBulanan" ColumnName="HasilBulanan" />
+          <ScalarProperty Name="LokasiSandarKapal" ColumnName="LokasiSandarKapal" />
+          <ScalarProperty Name="TypeKapal" ColumnName="TypeKapal" />
+          <ScalarProperty Name="StatusKapal" ColumnName="StatusKapal" />
+          <ScalarProperty Name="IdUserNelayan" ColumnName="IdUserNelayan" />
+          <ScalarProperty Name="IdKapalNelayan" ColumnName="IdKapalNelayan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailPekerjans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailPekerjan">
+        <MappingFragment StoreEntitySet="DetailPekerjan">
+          <ScalarProperty Name="TotalHasil" ColumnName="TotalHasil" />
+          <ScalarProperty Name="NominalHasil" ColumnName="NominalHasil" />
+          <ScalarProperty Name="PeriodeAkhir" ColumnName="PeriodeAkhir" />
+          <ScalarProperty Name="PeriodeAwal" ColumnName="PeriodeAwal" />
+          <ScalarProperty Name="IdUserPekerjaan" ColumnName="IdUserPekerjaan" />
+          <ScalarProperty Name="IdDetailPekerjaan" ColumnName="IdDetailPekerjaan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailPengaduans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailPengaduan">
+        <MappingFragment StoreEntitySet="DetailPengaduan">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Tanggapan" ColumnName="Tanggapan" />
+          <ScalarProperty Name="IdUserPenanggap" ColumnName="IdUserPenanggap" />
+          <ScalarProperty Name="IdPengaduan" ColumnName="IdPengaduan" />
+          <ScalarProperty Name="IdDetailPengaduan" ColumnName="IdDetailPengaduan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailUserPerdagangans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailUserPerdagangan">
+        <MappingFragment StoreEntitySet="DetailUserPerdagangan">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="PenghasilanBulanan" ColumnName="PenghasilanBulanan" />
+          <ScalarProperty Name="SemuaBiayaBulanan" ColumnName="SemuaBiayaBulanan" />
+          <ScalarProperty Name="JumPekerja" ColumnName="JumPekerja" />
+          <ScalarProperty Name="AlamatLapak" ColumnName="AlamatLapak" />
+          <ScalarProperty Name="StatusLapak" ColumnName="StatusLapak" />
+          <ScalarProperty Name="LuasLapak" ColumnName="LuasLapak" />
+          <ScalarProperty Name="TypeLapak" ColumnName="TypeLapak" />
+          <ScalarProperty Name="IdUserPerdagangan" ColumnName="IdUserPerdagangan" />
+          <ScalarProperty Name="IdDetailPerdagangan" ColumnName="IdDetailPerdagangan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailUserPertanians">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailUserPertanian">
+        <MappingFragment StoreEntitySet="DetailUserPertanian">
+          <ScalarProperty Name="IdUserPertanian" ColumnName="IdUserPertanian" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="TotalNominalPendukung" ColumnName="TotalNominalPendukung" />
+          <ScalarProperty Name="NominalPendukung" ColumnName="NominalPendukung" />
+          <ScalarProperty Name="QuantityPendukung" ColumnName="QuantityPendukung" />
+          <ScalarProperty Name="AlatBahanPendukung" ColumnName="AlatBahanPendukung" />
+          <ScalarProperty Name="IdSatuanPendukung" ColumnName="IdSatuanPendukung" />
+          <ScalarProperty Name="IdDetailPertanian" ColumnName="IdDetailPertanian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetailUserPeternakanPerikanans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.DetailUserPeternakanPerikanan">
+        <MappingFragment StoreEntitySet="DetailUserPeternakanPerikanan">
+          <ScalarProperty Name="IdUserPerikanan" ColumnName="IdUserPerikanan" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="TotalNominalPendukung" ColumnName="TotalNominalPendukung" />
+          <ScalarProperty Name="NominalPendukung" ColumnName="NominalPendukung" />
+          <ScalarProperty Name="QuantityPendukung" ColumnName="QuantityPendukung" />
+          <ScalarProperty Name="AlatBahanPendukung" ColumnName="AlatBahanPendukung" />
+          <ScalarProperty Name="IdSatuanPendukung" ColumnName="IdSatuanPendukung" />
+          <ScalarProperty Name="IdDetailPeternakan" ColumnName="IdDetailPeternakan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailLogs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.EmailLog">
+        <MappingFragment StoreEntitySet="EmailLog">
+          <ScalarProperty Name="StatusWA" ColumnName="StatusWA" />
+          <ScalarProperty Name="LinkContent" ColumnName="LinkContent" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="Messages" ColumnName="Messages" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdEmail" ColumnName="IdEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FcmMessages">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.FcmMessage">
+        <MappingFragment StoreEntitySet="FcmMessage">
+          <ScalarProperty Name="statusWa" ColumnName="statusWa" />
+          <ScalarProperty Name="IdParentMessage" ColumnName="IdParentMessage" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormulirAktaKelahirans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.FormulirAktaKelahiran">
+        <MappingFragment StoreEntitySet="FormulirAktaKelahiran">
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="LinkDocAkta" ColumnName="LinkDocAkta" />
+          <ScalarProperty Name="NikAyah" ColumnName="NikAyah" />
+          <ScalarProperty Name="AlamatAyah" ColumnName="AlamatAyah" />
+          <ScalarProperty Name="PekerjaanAyah" ColumnName="PekerjaanAyah" />
+          <ScalarProperty Name="TglLahirAyah" ColumnName="TglLahirAyah" />
+          <ScalarProperty Name="NamaAyah" ColumnName="NamaAyah" />
+          <ScalarProperty Name="AlamatIbu" ColumnName="AlamatIbu" />
+          <ScalarProperty Name="TglLahirIbu" ColumnName="TglLahirIbu" />
+          <ScalarProperty Name="PekerjaanIbu" ColumnName="PekerjaanIbu" />
+          <ScalarProperty Name="NikIbu" ColumnName="NikIbu" />
+          <ScalarProperty Name="NamaIbu" ColumnName="NamaIbu" />
+          <ScalarProperty Name="AnakKe" ColumnName="AnakKe" />
+          <ScalarProperty Name="PanjangBayi" ColumnName="PanjangBayi" />
+          <ScalarProperty Name="BeratBayi" ColumnName="BeratBayi" />
+          <ScalarProperty Name="JenisKelahiran" ColumnName="JenisKelahiran" />
+          <ScalarProperty Name="WaktuKelahiran" ColumnName="WaktuKelahiran" />
+          <ScalarProperty Name="TglLahir" ColumnName="TglLahir" />
+          <ScalarProperty Name="HariKelahiran" ColumnName="HariKelahiran" />
+          <ScalarProperty Name="TempatKelahiran" ColumnName="TempatKelahiran" />
+          <ScalarProperty Name="KelaminBayi" ColumnName="KelaminBayi" />
+          <ScalarProperty Name="NamaBayi" ColumnName="NamaBayi" />
+          <ScalarProperty Name="IdUserPelapor" ColumnName="IdUserPelapor" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+          <ScalarProperty Name="IdFormAktaKelahiran" ColumnName="IdFormAktaKelahiran" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormulirKKs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.FormulirKK">
+        <MappingFragment StoreEntitySet="FormulirKK">
+          <ScalarProperty Name="LinkDocKK" ColumnName="LinkDocKK" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="DokPendukungKK" ColumnName="DokPendukungKK" />
+          <ScalarProperty Name="JumlahKK" ColumnName="JumlahKK" />
+          <ScalarProperty Name="AlasanPemohon" ColumnName="AlasanPemohon" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdMasterFlow" ColumnName="IdMasterFlow" />
+          <ScalarProperty Name="IdFormulirKK" ColumnName="IdFormulirKK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormulirKTPs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.FormulirKTP">
+        <MappingFragment StoreEntitySet="FormulirKTP">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="LinkDocKTP" ColumnName="LinkDocKTP" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="DokPendukung_" ColumnName="DokPendukung " />
+          <ScalarProperty Name="TypePermohonan" ColumnName="TypePermohonan" />
+          <ScalarProperty Name="IdFFowForm" ColumnName="IdFFowForm" />
+          <ScalarProperty Name="IdFormulirKTP" ColumnName="IdFormulirKTP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fora">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Forum">
+        <MappingFragment StoreEntitySet="Forum">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="HiddenUser" ColumnName="HiddenUser" />
+          <ScalarProperty Name="FotoDokumenForum" ColumnName="FotoDokumenForum" />
+          <ScalarProperty Name="DetailForum" ColumnName="DetailForum" />
+          <ScalarProperty Name="IdUserInsert" ColumnName="IdUserInsert" />
+          <ScalarProperty Name="IdMasterForum" ColumnName="IdMasterForum" />
+          <ScalarProperty Name="IdForum" ColumnName="IdForum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="LanguageName" ColumnName="LanguageName" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterBudidayas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterBudidaya">
+        <MappingFragment StoreEntitySet="MasterBudidaya">
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="IdSatuanBudidaya" ColumnName="IdSatuanBudidaya" />
+          <ScalarProperty Name="IdBudidaya" ColumnName="IdBudidaya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterDesas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterDesa">
+        <MappingFragment StoreEntitySet="MasterDesa">
+          <ScalarProperty Name="NoKodeDesa" ColumnName="NoKodeDesa" />
+          <ScalarProperty Name="LogoDesa" ColumnName="LogoDesa" />
+          <ScalarProperty Name="DescDesa" ColumnName="DescDesa" />
+          <ScalarProperty Name="LongtitudeDesa" ColumnName="LongtitudeDesa" />
+          <ScalarProperty Name="LantitudeDesa" ColumnName="LantitudeDesa" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdKecamatan" ColumnName="IdKecamatan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterFlowFormulirs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterFlowFormulir">
+        <MappingFragment StoreEntitySet="MasterFlowFormulir">
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="DescForm" ColumnName="DescForm" />
+          <ScalarProperty Name="Slaform" ColumnName="Slaform" />
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterFormulirs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterFormulir">
+        <MappingFragment StoreEntitySet="MasterFormulir">
+          <ScalarProperty Name="DescFormulir" ColumnName="DescFormulir" />
+          <ScalarProperty Name="NamaFormulir" ColumnName="NamaFormulir" />
+          <ScalarProperty Name="IdFormulir" ColumnName="IdFormulir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterForums">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterForum">
+        <MappingFragment StoreEntitySet="MasterForum">
+          <ScalarProperty Name="Deskripsi" ColumnName="Deskripsi" />
+          <ScalarProperty Name="NamaForum" ColumnName="NamaForum" />
+          <ScalarProperty Name="IdMasterForum" ColumnName="IdMasterForum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterHasilBudidayas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterHasilBudidaya">
+        <MappingFragment StoreEntitySet="MasterHasilBudidaya">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="IdSatuanHasil" ColumnName="IdSatuanHasil" />
+          <ScalarProperty Name="NamaHasil" ColumnName="NamaHasil" />
+          <ScalarProperty Name="IdMasterBudidaya" ColumnName="IdMasterBudidaya" />
+          <ScalarProperty Name="IdHasilBudidaya" ColumnName="IdHasilBudidaya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterHubungans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterHubungan">
+        <MappingFragment StoreEntitySet="MasterHubungan">
+          <ScalarProperty Name="DescHubungan" ColumnName="DescHubungan" />
+          <ScalarProperty Name="KodeHubungan" ColumnName="KodeHubungan" />
+          <ScalarProperty Name="NamaHubungan" ColumnName="NamaHubungan" />
+          <ScalarProperty Name="IdHubungan" ColumnName="IdHubungan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterJabatans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterJabatan">
+        <MappingFragment StoreEntitySet="MasterJabatan">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="NamaJabatan" ColumnName="NamaJabatan" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterKabupatens">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterKabupaten">
+        <MappingFragment StoreEntitySet="MasterKabupaten">
+          <ScalarProperty Name="NoKodeKabupaten" ColumnName="NoKodeKabupaten" />
+          <ScalarProperty Name="LogoKabupaten" ColumnName="LogoKabupaten" />
+          <ScalarProperty Name="DescKabupaten" ColumnName="DescKabupaten" />
+          <ScalarProperty Name="LongtitudeKabupaten" ColumnName="LongtitudeKabupaten" />
+          <ScalarProperty Name="Langtitudekabupaten" ColumnName="Langtitudekabupaten" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterKecamatans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterKecamatan">
+        <MappingFragment StoreEntitySet="MasterKecamatan">
+          <ScalarProperty Name="NoKodeKecamatan" ColumnName="NoKodeKecamatan" />
+          <ScalarProperty Name="LogoKecamatan" ColumnName="LogoKecamatan" />
+          <ScalarProperty Name="DecKecamatan" ColumnName="DecKecamatan" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="LongtitudeKecamatan" ColumnName="LongtitudeKecamatan" />
+          <ScalarProperty Name="LangtitudeKecamatan" ColumnName="LangtitudeKecamatan" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterPekerjaans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterPekerjaan">
+        <MappingFragment StoreEntitySet="MasterPekerjaan">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterPropinsis">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterPropinsi">
+        <MappingFragment StoreEntitySet="MasterPropinsi">
+          <ScalarProperty Name="NoKodePropinsi" ColumnName="NoKodePropinsi" />
+          <ScalarProperty Name="LogoPropinsi" ColumnName="LogoPropinsi" />
+          <ScalarProperty Name="DescPropinsi" ColumnName="DescPropinsi" />
+          <ScalarProperty Name="LongitudePropinsi" ColumnName="LongitudePropinsi" />
+          <ScalarProperty Name="LatitudePropinsi" ColumnName="LatitudePropinsi" />
+          <ScalarProperty Name="IbuKotaPropinsi" ColumnName="IbuKotaPropinsi" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterSatuans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterSatuan">
+        <MappingFragment StoreEntitySet="MasterSatuan">
+          <ScalarProperty Name="DescSatuan" ColumnName="DescSatuan" />
+          <ScalarProperty Name="NamaSatuan" ColumnName="NamaSatuan" />
+          <ScalarProperty Name="IdSatuan" ColumnName="IdSatuan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterStatus">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterStatu">
+        <MappingFragment StoreEntitySet="MasterStatus">
+          <ScalarProperty Name="NamaStatus" ColumnName="NamaStatus" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterTujuanPengaduans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterTujuanPengaduan">
+        <MappingFragment StoreEntitySet="MasterTujuanPengaduan">
+          <ScalarProperty Name="NamaTujuan" ColumnName="NamaTujuan" />
+          <ScalarProperty Name="IdMasterTujuan" ColumnName="IdMasterTujuan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterVersions">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.MasterVersion">
+        <MappingFragment StoreEntitySet="MasterVersion">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="NumberVersion" ColumnName="NumberVersion" />
+          <ScalarProperty Name="NamaVersion" ColumnName="NamaVersion" />
+          <ScalarProperty Name="IdMasterVersion" ColumnName="IdMasterVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentMessages">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ParentMessage">
+        <MappingFragment StoreEntitySet="ParentMessage">
+          <ScalarProperty Name="IdUserShare" ColumnName="IdUserShare" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="IdParentMessage" ColumnName="IdParentMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pengaduans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Pengaduan">
+        <MappingFragment StoreEntitySet="Pengaduan">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="FotoDokumen" ColumnName="FotoDokumen" />
+          <ScalarProperty Name="PerihalPengaduan" ColumnName="PerihalPengaduan" />
+          <ScalarProperty Name="IdMasterTujuan" ColumnName="IdMasterTujuan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="IdUserPengadu" ColumnName="IdUserPengadu" />
+          <ScalarProperty Name="IdPengaduan" ColumnName="IdPengaduan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolePermissions">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.RolePermission">
+        <MappingFragment StoreEntitySet="RolePermissions">
+          <ScalarProperty Name="PermissionKey" ColumnName="PermissionKey" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RolePermissionId" ColumnName="RolePermissionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusFormFlows">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.StatusFormFlow">
+        <MappingFragment StoreEntitySet="StatusFormFlow">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="KeteranganFlow" ColumnName="KeteranganFlow" />
+          <ScalarProperty Name="StatusFlow" ColumnName="StatusFlow" />
+          <ScalarProperty Name="IdDetailFlow" ColumnName="IdDetailFlow" />
+          <ScalarProperty Name="IdFormulirKK" ColumnName="IdFormulirKK" />
+          <ScalarProperty Name="IdStatusFlow" ColumnName="IdStatusFlow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransaksiStatus">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.TransaksiStatu">
+        <MappingFragment StoreEntitySet="TransaksiStatus">
+          <ScalarProperty Name="IdTransaksiForm" ColumnName="IdTransaksiForm" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="IdUserAparat" ColumnName="IdUserAparat" />
+          <ScalarProperty Name="Keterangan" ColumnName="Keterangan" />
+          <ScalarProperty Name="IdUserPengajuan" ColumnName="IdUserPengajuan" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="IdTransaksi" ColumnName="IdTransaksi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserKaryawans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserKaryawan">
+        <MappingFragment StoreEntitySet="UserKaryawan">
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="AlamatPerusahanUsaha" ColumnName="AlamatPerusahanUsaha" />
+          <ScalarProperty Name="NamaperusahaanUsaha" ColumnName="NamaperusahaanUsaha" />
+          <ScalarProperty Name="RatarataPenghasilan" ColumnName="RatarataPenghasilan" />
+          <ScalarProperty Name="StatusKaryawan" ColumnName="StatusKaryawan" />
+          <ScalarProperty Name="TypePerusahaan" ColumnName="TypePerusahaan" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdUserKaryawan" ColumnName="IdUserKaryawan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserNelayans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserNelayan">
+        <MappingFragment StoreEntitySet="UserNelayan">
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdUserNelayan" ColumnName="IdUserNelayan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPekerjaans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPekerjaan">
+        <MappingFragment StoreEntitySet="UserPekerjaan">
+          <ScalarProperty Name="PeriodeHasil" ColumnName="PeriodeHasil" />
+          <ScalarProperty Name="UnitPenghasilan" ColumnName="UnitPenghasilan" />
+          <ScalarProperty Name="IdBudidaya" ColumnName="IdBudidaya" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdUserPekerjaan" ColumnName="IdUserPekerjaan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPerdagangans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPerdagangan">
+        <MappingFragment StoreEntitySet="UserPerdagangan">
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="JenisDagangan" ColumnName="JenisDagangan" />
+          <ScalarProperty Name="NamaBrandToko" ColumnName="NamaBrandToko" />
+          <ScalarProperty Name="Iduser" ColumnName="Iduser" />
+          <ScalarProperty Name="IdUserPerdagangan" ColumnName="IdUserPerdagangan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPerikananPeternakans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPerikananPeternakan">
+        <MappingFragment StoreEntitySet="UserPerikananPeternakan">
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="NominalHasilPanen" ColumnName="NominalHasilPanen" />
+          <ScalarProperty Name="HasilPanen" ColumnName="HasilPanen" />
+          <ScalarProperty Name="PeriodePanen" ColumnName="PeriodePanen" />
+          <ScalarProperty Name="JumlahPekerja" ColumnName="JumlahPekerja" />
+          <ScalarProperty Name="LuasLahan" ColumnName="LuasLahan" />
+          <ScalarProperty Name="TotalBibit" ColumnName="TotalBibit" />
+          <ScalarProperty Name="IdHasilBudidaya" ColumnName="IdHasilBudidaya" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdUserPerikanan" ColumnName="IdUserPerikanan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPermissions">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPermission">
+        <MappingFragment StoreEntitySet="UserPermissions">
+          <ScalarProperty Name="Granted" ColumnName="Granted" />
+          <ScalarProperty Name="PermissionKey" ColumnName="PermissionKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserPermissionId" ColumnName="UserPermissionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPertanianPerkebunans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPertanianPerkebunan">
+        <MappingFragment StoreEntitySet="UserPertanianPerkebunan">
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="NominalHasilPanen" ColumnName="NominalHasilPanen" />
+          <ScalarProperty Name="HasilPanen" ColumnName="HasilPanen" />
+          <ScalarProperty Name="PeriodePanen" ColumnName="PeriodePanen" />
+          <ScalarProperty Name="JumlahPekerja" ColumnName="JumlahPekerja" />
+          <ScalarProperty Name="LuasLahan" ColumnName="LuasLahan" />
+          <ScalarProperty Name="IdHasilBudidaya" ColumnName="IdHasilBudidaya" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdUserPertanian" ColumnName="IdUserPertanian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPreferences">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserPreference">
+        <MappingFragment StoreEntitySet="UserPreferences">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PreferenceType" ColumnName="PreferenceType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserPreferenceId" ColumnName="UserPreferenceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="FcmToken" ColumnName="FcmToken" />
+          <ScalarProperty Name="IdVersion" ColumnName="IdVersion" />
+          <ScalarProperty Name="Pendidikan" ColumnName="Pendidikan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UpdateUserId" ColumnName="UpdateUserId" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="InsertUserId" ColumnName="InsertUserId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="LastDirectoryUpdate" ColumnName="LastDirectoryUpdate" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exceptions">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.Exception">
+        <MappingFragment StoreEntitySet="Exceptions">
+          <ScalarProperty Name="DuplicateCount" ColumnName="DuplicateCount" />
+          <ScalarProperty Name="ErrorHash" ColumnName="ErrorHash" />
+          <ScalarProperty Name="FullJson" ColumnName="FullJson" />
+          <ScalarProperty Name="DeletionDate" ColumnName="DeletionDate" />
+          <ScalarProperty Name="SQL" ColumnName="SQL" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="HTTPMethod" ColumnName="HTTPMethod" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Host" ColumnName="Host" />
+          <ScalarProperty Name="IsProtected" ColumnName="IsProtected" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InfoDesas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.InfoDesa">
+        <MappingFragment StoreEntitySet="InfoDesa">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ShortDescInfo" ColumnName="ShortDescInfo" />
+          <ScalarProperty Name="TitleInfo" ColumnName="TitleInfo" />
+          <ScalarProperty Name="BodyInfo" ColumnName="BodyInfo" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdInfoDesa" ColumnName="IdInfoDesa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VersionInfoes">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.VersionInfo">
+        <MappingFragment StoreEntitySet="VersionInfo">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AppliedOn" ColumnName="AppliedOn" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VChartByAllPekerjaans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.VChartByAllPekerjaan">
+        <MappingFragment StoreEntitySet="VChartByAllPekerjaan">
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="TotalPenghasilan" ColumnName="TotalPenghasilan" />
+          <ScalarProperty Name="CountTransaksi" ColumnName="CountTransaksi" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VChartDesaByPekerjaans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.VChartDesaByPekerjaan">
+        <MappingFragment StoreEntitySet="VChartDesaByPekerjaan">
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="namadesa" ColumnName="namadesa" />
+          <ScalarProperty Name="TotalPenghasilan" ColumnName="TotalPenghasilan" />
+          <ScalarProperty Name="CountTransaksi" ColumnName="CountTransaksi" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewAllPenghasilans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewAllPenghasilan">
+        <MappingFragment StoreEntitySet="ViewAllPenghasilan">
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="TotalHasil" ColumnName="TotalHasil" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+          <ScalarProperty Name="NumberId" ColumnName="NumberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewAparatDesas">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.viewAparatDesa">
+        <MappingFragment StoreEntitySet="viewAparatDesa">
+          <ScalarProperty Name="NamaJabatan" ColumnName="NamaJabatan" />
+          <ScalarProperty Name="IdUserAparatDesa" ColumnName="IdUserAparatDesa" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="StatusAparatur" ColumnName="StatusAparatur" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewDetailAktaLahirs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewDetailAktaLahir">
+        <MappingFragment StoreEntitySet="ViewDetailAktaLahir">
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="NIKSaksi" ColumnName="NIKSaksi" />
+          <ScalarProperty Name="PekerjaanSaksi" ColumnName="PekerjaanSaksi" />
+          <ScalarProperty Name="TglLahirSaksi" ColumnName="TglLahirSaksi" />
+          <ScalarProperty Name="NamaSaksi" ColumnName="NamaSaksi" />
+          <ScalarProperty Name="IdDetailAktaLahir" ColumnName="IdDetailAktaLahir" />
+          <ScalarProperty Name="NamaBayi" ColumnName="NamaBayi" />
+          <ScalarProperty Name="IdFormAktaKelahiran" ColumnName="IdFormAktaKelahiran" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewDetailFormKKs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewDetailFormKK">
+        <MappingFragment StoreEntitySet="ViewDetailFormKK">
+          <ScalarProperty Name="IdFormulirKK" ColumnName="IdFormulirKK" />
+          <ScalarProperty Name="JumlahKK" ColumnName="JumlahKK" />
+          <ScalarProperty Name="AlasanPemohon" ColumnName="AlasanPemohon" />
+          <ScalarProperty Name="KodeHubungan" ColumnName="KodeHubungan" />
+          <ScalarProperty Name="DescHubungan" ColumnName="DescHubungan" />
+          <ScalarProperty Name="NamaHubungan" ColumnName="NamaHubungan" />
+          <ScalarProperty Name="NamaLengkap" ColumnName="NamaLengkap" />
+          <ScalarProperty Name="NIK" ColumnName="NIK" />
+          <ScalarProperty Name="IdMasterHub" ColumnName="IdMasterHub" />
+          <ScalarProperty Name="IdDetailKK" ColumnName="IdDetailKK" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewFormAktaKelahirans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewFormAktaKelahiran">
+        <MappingFragment StoreEntitySet="ViewFormAktaKelahiran">
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="Nomor" ColumnName="Nomor" />
+          <ScalarProperty Name="DescHubungan" ColumnName="DescHubungan" />
+          <ScalarProperty Name="KodeHubungan" ColumnName="KodeHubungan" />
+          <ScalarProperty Name="NamaHubungan" ColumnName="NamaHubungan" />
+          <ScalarProperty Name="DescPropinsi" ColumnName="DescPropinsi" />
+          <ScalarProperty Name="NoKodePropinsi" ColumnName="NoKodePropinsi" />
+          <ScalarProperty Name="IbuKotaPropinsi" ColumnName="IbuKotaPropinsi" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="NoKodeKabupaten" ColumnName="NoKodeKabupaten" />
+          <ScalarProperty Name="DescKabupaten" ColumnName="DescKabupaten" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="NoKodeKecamatan" ColumnName="NoKodeKecamatan" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="NoKodeDesa" ColumnName="NoKodeDesa" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="DokAkta" ColumnName="DokAkta" />
+          <ScalarProperty Name="LinkDocAkta" ColumnName="LinkDocAkta" />
+          <ScalarProperty Name="NikAyah" ColumnName="NikAyah" />
+          <ScalarProperty Name="AlamatAyah" ColumnName="AlamatAyah" />
+          <ScalarProperty Name="PekerjaanAyah" ColumnName="PekerjaanAyah" />
+          <ScalarProperty Name="TglLahirAyah" ColumnName="TglLahirAyah" />
+          <ScalarProperty Name="NamaAyah" ColumnName="NamaAyah" />
+          <ScalarProperty Name="AlamatIbu" ColumnName="AlamatIbu" />
+          <ScalarProperty Name="TglLahirIbu" ColumnName="TglLahirIbu" />
+          <ScalarProperty Name="PekerjaanIbu" ColumnName="PekerjaanIbu" />
+          <ScalarProperty Name="NikIbu" ColumnName="NikIbu" />
+          <ScalarProperty Name="NamaIbu" ColumnName="NamaIbu" />
+          <ScalarProperty Name="AnakKe" ColumnName="AnakKe" />
+          <ScalarProperty Name="PanjangBayi" ColumnName="PanjangBayi" />
+          <ScalarProperty Name="BeratBayi" ColumnName="BeratBayi" />
+          <ScalarProperty Name="JenisKelahiran" ColumnName="JenisKelahiran" />
+          <ScalarProperty Name="WaktuKelahiran" ColumnName="WaktuKelahiran" />
+          <ScalarProperty Name="TglLahir" ColumnName="TglLahir" />
+          <ScalarProperty Name="HariKelahiran" ColumnName="HariKelahiran" />
+          <ScalarProperty Name="IdFormAktaKelahiran" ColumnName="IdFormAktaKelahiran" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+          <ScalarProperty Name="TempatKelahiran" ColumnName="TempatKelahiran" />
+          <ScalarProperty Name="KelaminBayi" ColumnName="KelaminBayi" />
+          <ScalarProperty Name="NamaBayi" ColumnName="NamaBayi" />
+          <ScalarProperty Name="IdUserPelapor" ColumnName="IdUserPelapor" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewFormFlows">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.viewFormFlow">
+        <MappingFragment StoreEntitySet="viewFormFlow">
+          <ScalarProperty Name="UrutanFlow" ColumnName="UrutanFlow" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewFormKKs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewFormKK">
+        <MappingFragment StoreEntitySet="ViewFormKK">
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="Nomor" ColumnName="Nomor" />
+          <ScalarProperty Name="IdFormulirKK" ColumnName="IdFormulirKK" />
+          <ScalarProperty Name="NoKodePropinsi" ColumnName="NoKodePropinsi" />
+          <ScalarProperty Name="IbuKotaPropinsi" ColumnName="IbuKotaPropinsi" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="NoKodeKabupaten" ColumnName="NoKodeKabupaten" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="NoKodeKecamatan" ColumnName="NoKodeKecamatan" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="DescHubungan" ColumnName="DescHubungan" />
+          <ScalarProperty Name="NamaHubungan" ColumnName="NamaHubungan" />
+          <ScalarProperty Name="NoKodeDesa" ColumnName="NoKodeDesa" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="LinkDocKK" ColumnName="LinkDocKK" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DokPendukungKK" ColumnName="DokPendukungKK" />
+          <ScalarProperty Name="JumlahKK" ColumnName="JumlahKK" />
+          <ScalarProperty Name="AlasanPemohon" ColumnName="AlasanPemohon" />
+          <ScalarProperty Name="IdMasterFlow" ColumnName="IdMasterFlow" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewFormKTPs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewFormKTP">
+        <MappingFragment StoreEntitySet="ViewFormKTP">
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="Nomor" ColumnName="Nomor" />
+          <ScalarProperty Name="NoKodeDesa" ColumnName="NoKodeDesa" />
+          <ScalarProperty Name="NoKodePropinsi" ColumnName="NoKodePropinsi" />
+          <ScalarProperty Name="NoKodeKabupaten" ColumnName="NoKodeKabupaten" />
+          <ScalarProperty Name="NoKodeKecamatan" ColumnName="NoKodeKecamatan" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="DescHubungan" ColumnName="DescHubungan" />
+          <ScalarProperty Name="NamaHubungan" ColumnName="NamaHubungan" />
+          <ScalarProperty Name="LinkDocKTP" ColumnName="LinkDocKTP" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="DokPendukung_" ColumnName="DokPendukung " />
+          <ScalarProperty Name="TypePermohonan" ColumnName="TypePermohonan" />
+          <ScalarProperty Name="IdFFowForm" ColumnName="IdFFowForm" />
+          <ScalarProperty Name="IdFormulirKTP" ColumnName="IdFormulirKTP" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewMaasterForms">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewMaasterForm">
+        <MappingFragment StoreEntitySet="ViewMaasterForm">
+          <ScalarProperty Name="ReqForm" ColumnName="ReqForm" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="DescForm" ColumnName="DescForm" />
+          <ScalarProperty Name="Slaform" ColumnName="Slaform" />
+          <ScalarProperty Name="IdFormulir" ColumnName="IdFormulir" />
+          <ScalarProperty Name="NamaFormulir" ColumnName="NamaFormulir" />
+          <ScalarProperty Name="IdFormFlow" ColumnName="IdFormFlow" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewNelayans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewNelayan">
+        <MappingFragment StoreEntitySet="ViewNelayan">
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="TotalPenghasilanNelayan" ColumnName="TotalPenghasilanNelayan" />
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewPertanians">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewPertanian">
+        <MappingFragment StoreEntitySet="ViewPertanian">
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="TotalPenghasilanPertanian" ColumnName="TotalPenghasilanPertanian" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProfilUsers">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewProfilUser">
+        <MappingFragment StoreEntitySet="ViewProfilUser">
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="NoKodePropinsi" ColumnName="NoKodePropinsi" />
+          <ScalarProperty Name="LogoPropinsi" ColumnName="LogoPropinsi" />
+          <ScalarProperty Name="IbuKotaPropinsi" ColumnName="IbuKotaPropinsi" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="LogoKabupaten" ColumnName="LogoKabupaten" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NoKodeKabupaten" ColumnName="NoKodeKabupaten" />
+          <ScalarProperty Name="KodePos" ColumnName="KodePos" />
+          <ScalarProperty Name="NoKodeKecamatan" ColumnName="NoKodeKecamatan" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="NoKodeDesa" ColumnName="NoKodeDesa" />
+          <ScalarProperty Name="LogoDesa" ColumnName="LogoDesa" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdKecamatan" ColumnName="IdKecamatan" />
+          <ScalarProperty Name="Pendidikan" ColumnName="Pendidikan" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewTransaksiFormulirs">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.viewTransaksiFormulir">
+        <MappingFragment StoreEntitySet="viewTransaksiFormulir">
+          <ScalarProperty Name="NamaStatus" ColumnName="NamaStatus" />
+          <ScalarProperty Name="Dokumen" ColumnName="Dokumen" />
+          <ScalarProperty Name="Formulir" ColumnName="Formulir" />
+          <ScalarProperty Name="IdFormulir" ColumnName="IdFormulir" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="IdUserAparat" ColumnName="IdUserAparat" />
+          <ScalarProperty Name="IdUserPengajuan" ColumnName="IdUserPengajuan" />
+          <ScalarProperty Name="IdTransaksiForm" ColumnName="IdTransaksiForm" />
+          <ScalarProperty Name="IdTransaksi" ColumnName="IdTransaksi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewTransaksiPengajuans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.viewTransaksiPengajuan">
+        <MappingFragment StoreEntitySet="viewTransaksiPengajuan">
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="IdKecamatan" ColumnName="IdKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TanggalLahir" ColumnName="TanggalLahir" />
+          <ScalarProperty Name="JenisKelamin" ColumnName="JenisKelamin" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="IdHubungan_" ColumnName="IdHubungan " />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="NamaJabatan" ColumnName="NamaJabatan" />
+          <ScalarProperty Name="PeriodeAkhir" ColumnName="PeriodeAkhir" />
+          <ScalarProperty Name="PeriodeAwal" ColumnName="PeriodeAwal" />
+          <ScalarProperty Name="StatusAparatur" ColumnName="StatusAparatur" />
+          <ScalarProperty Name="IdJabatan" ColumnName="IdJabatan" />
+          <ScalarProperty Name="AparatDesa" ColumnName="AparatDesa" />
+          <ScalarProperty Name="IdUserAparat" ColumnName="IdUserAparat" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="NamaStatus" ColumnName="NamaStatus" />
+          <ScalarProperty Name="IdUserPengajuan" ColumnName="IdUserPengajuan" />
+          <ScalarProperty Name="NamaFormulir" ColumnName="NamaFormulir" />
+          <ScalarProperty Name="IdMasterForm" ColumnName="IdMasterForm" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUserKaryawans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewUserKaryawan">
+        <MappingFragment StoreEntitySet="ViewUserKaryawan">
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="TotalPenghasilanKaryawan" ColumnName="TotalPenghasilanKaryawan" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewUserPengajuans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.viewUserPengajuan">
+        <MappingFragment StoreEntitySet="viewUserPengajuan">
+          <ScalarProperty Name="IdTransaksiFormulir" ColumnName="IdTransaksiFormulir" />
+          <ScalarProperty Name="Dokumen" ColumnName="Dokumen" />
+          <ScalarProperty Name="Formulir" ColumnName="Formulir" />
+          <ScalarProperty Name="IdFormulir" ColumnName="IdFormulir" />
+          <ScalarProperty Name="UserPengaju" ColumnName="UserPengaju" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+          <ScalarProperty Name="NumberId" ColumnName="NumberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUserPerdagangans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewUserPerdagangan">
+        <MappingFragment StoreEntitySet="ViewUserPerdagangan">
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="TotalPenghasilanPerdagangan" ColumnName="TotalPenghasilanPerdagangan" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUserPeternakans">
+      <EntityTypeMapping TypeName="SiDedy_Default_v1Model.ViewUserPeternakan">
+        <MappingFragment StoreEntitySet="ViewUserPeternakan">
+          <ScalarProperty Name="NamaBudidaya" ColumnName="NamaBudidaya" />
+          <ScalarProperty Name="NamaPekerjaan" ColumnName="NamaPekerjaan" />
+          <ScalarProperty Name="IdPekerjaan" ColumnName="IdPekerjaan" />
+          <ScalarProperty Name="TotalPenghasilanPeternakan" ColumnName="TotalPenghasilanPeternakan" />
+          <ScalarProperty Name="NamaPropinsi" ColumnName="NamaPropinsi" />
+          <ScalarProperty Name="IdPropinsi" ColumnName="IdPropinsi" />
+          <ScalarProperty Name="NamaKabupaten" ColumnName="NamaKabupaten" />
+          <ScalarProperty Name="IdKabupaten" ColumnName="IdKabupaten" />
+          <ScalarProperty Name="NamaKecamatan" ColumnName="NamaKecamatan" />
+          <ScalarProperty Name="idKecamatan" ColumnName="idKecamatan" />
+          <ScalarProperty Name="NamaDesa" ColumnName="NamaDesa" />
+          <ScalarProperty Name="IdDesa" ColumnName="IdDesa" />
+          <ScalarProperty Name="WaNumber" ColumnName="WaNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="NoKK" ColumnName="NoKK" />
+          <ScalarProperty Name="NoKTP" ColumnName="NoKTP" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
