@@ -84,3 +84,8 @@ D:\Project Aspan\SDD\SDD\SDD.Web\bin\CrystalDecisions.ReportAppServer.CommonCont
 D:\Project Aspan\SDD\SDD\SDD.Web\bin\stdole.dll
 D:\Project Aspan\SDD\SDD\SDD.Web\bin\CrystalDecisions.CrystalReports.Design.dll
 D:\Project Aspan\SDD\SDD\SDD.Web\bin\CrystalDecisions.Web.dll
+D:\Project Aspan\SDD\SDD\SDD.Web\bin\RestSharp.dll
+D:\Project Aspan\SDD\SDD\SDD.Web\bin\RestSharp.Serializers.Newtonsoft.Json.dll
+D:\Project Aspan\SDD\SDD\SDD.Web\bin\RestSharp.Serializers.NewtonsoftJson.dll
+D:\Project Aspan\SDD\SDD\SDD.Web\bin\RestSharp.xml
+D:\Project Aspan\SDD\SDD\SDD.Web\bin\RestSharp.Serializers.NewtonsoftJson.xml

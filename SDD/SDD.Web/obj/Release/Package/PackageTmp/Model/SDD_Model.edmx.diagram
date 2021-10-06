@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eeb36717597e424ebed03936f557a1e7" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.AparaturDesa" Width="1.5" PointX="11" PointY="36.125" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Banner" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailAktaLahir" Width="1.5" PointX="8.25" PointY="45.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailFlowForm" Width="1.5" PointX="6" PointY="54.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailFormulirKK" Width="1.5" PointX="5.25" PointY="33.5" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailForum" Width="1.5" PointX="8.25" PointY="37.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailKapalNelayan" Width="1.5" PointX="5.25" PointY="76.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailPekerjan" Width="1.5" PointX="11.25" PointY="28.5" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailPengaduan" Width="1.5" PointX="9" PointY="41.5" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailUserPerdagangan" Width="1.5" PointX="5.25" PointY="69" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailUserPertanian" Width="1.5" PointX="14.25" PointY="32.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.DetailUserPeternakanPerikanan" Width="1.5" PointX="8.25" PointY="25.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.EmailLog" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.FcmMessage" Width="1.5" PointX="3" PointY="45" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.FormulirAktaKelahiran" Width="1.5" PointX="6" PointY="41.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.FormulirKK" Width="1.5" PointX="3" PointY="33.125" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.FormulirKTP" Width="1.5" PointX="6" PointY="37.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Forum" Width="1.5" PointX="3" PointY="37.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Language" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterBudidaya" Width="1.5" PointX="6.75" PointY="20.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterDesa" Width="1.5" PointX="0.75" PointY="27.875" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterFlowFormulir" Width="1.5" PointX="3.75" PointY="52.875" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterFormulir" Width="1.5" PointX="1.5" PointY="53.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterForum" Width="1.5" PointX="0.75" PointY="46.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterHasilBudidaya" Width="1.5" PointX="3.75" PointY="25.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterHubungan" Width="1.5" PointX="3" PointY="49.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterJabatan" Width="1.5" PointX="3.75" PointY="56.5" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterKabupaten" Width="1.5" PointX="1.5" PointY="20" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterKecamatan" Width="1.5" PointX="1.5" PointY="24" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterPekerjaan" Width="1.5" PointX="4.5" PointY="19.125" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterPropinsi" Width="1.5" PointX="1.5" PointY="16.125" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterSatuan" Width="1.5" PointX="4.5" PointY="21.875" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterStatu" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterTujuanPengaduan" Width="1.5" PointX="0.75" PointY="44" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.MasterVersion" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ParentMessage" Width="1.5" PointX="0.75" PointY="56.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Pengaduan" Width="1.5" PointX="3" PointY="29.125" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.RolePermission" Width="1.5" PointX="3" PointY="63.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Role" Width="1.5" PointX="0.75" PointY="49.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.StatusFormFlow" Width="1.5" PointX="8.25" PointY="33.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.TransaksiStatu" Width="1.5" PointX="3.75" PointY="59.875" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserKaryawan" Width="1.5" PointX="3" PointY="91" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserNelayan" Width="1.5" PointX="3" PointY="76.875" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPekerjaan" Width="1.5" PointX="9" PointY="29.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPerdagangan" Width="1.5" PointX="3" PointY="69.375" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPerikananPeternakan" Width="1.5" PointX="6" PointY="29" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPermission" Width="1.5" PointX="3" PointY="88.25" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPertanianPerkebunan" Width="1.5" PointX="12" PointY="32" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserPreference" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.UserRole" Width="1.5" PointX="3" PointY="41.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.User" Width="1.5" PointX="0.75" PointY="32.625" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.Exception" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.InfoDesa" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.VersionInfo" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.VChartByAllPekerjaan" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.VChartDesaByPekerjaan" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewAllPenghasilan" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.viewAparatDesa" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewDetailAktaLahir" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewDetailFormKK" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewFormAktaKelahiran" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.viewFormFlow" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewFormKK" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewFormKTP" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewMaasterForm" Width="1.5" PointX="12.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewNelayan" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewPertanian" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewProfilUser" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.viewTransaksiFormulir" Width="1.5" PointX="3.75" PointY="14.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.viewTransaksiPengajuan" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewUserKaryawan" Width="1.5" PointX="16.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.viewUserPengajuan" Width="1.5" PointX="16.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewUserPerdagangan" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SiDedy_Default_v1Model.ViewUserPeternakan" Width="1.5" PointX="18.75" PointY="6.75" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__AparaturD__IdJab__3A81B327" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__AparaturD__IdUse__38996AB5" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_MasterDesaAparat" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_AktaLahir" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailFlo__IdFor__5070F446" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailFlo__IdJab__5165187F" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__StatusFor__IdDet__5FB337D6" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailFor__IdFor__245D67DE" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailFor__IdMas__25518C17" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_Forum" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_Ur" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_DetailNelayan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailPek__IdUse__47DBAE45" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_IdPengaduan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_Usersisd" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_UserPerdagangan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__DetailUse__IdSat__693CA210" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_UserPertanian" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_SatuanPerikanan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_UserPerikanan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__FcmMessag__IdUse__5C02A283" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_Parent" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__FormulirA__IdUse__0D7A0286" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_FormFlow" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__FormulirK__IdUse__571DF1D5" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__StatusFor__IdFor__5EBF139D" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__FormulirK__IdFFo__07C12930" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_User_id" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_masterforum" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_us" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterBud__IdPek__60A75C0F" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterBud__IdSat__3F466844" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPeker__IdBud__44FF419A" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_masterBudiDaya" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterDes__IdKec__35BCFE0A" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_desa" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_MasterDesaForm" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterFlo__IdMas__4CA06362" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.fk_form" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPerik__IdHas__6EF57B66" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPerta__IdHas__6B24EA82" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_Satuan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterKab__IdPro__300424B4" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__MasterKec__IdKab__32E0915F" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPeker__IdPek__440B1D61" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_MasterTujuan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.Fk_Usr" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_RolePermissions_RoleId" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_UserRoles_RoleId" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.fk_users_idkar" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.fk_usernelayan" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPeker__IdUse__4316F928" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPerda__Iduse__208CD6FA" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPerik__IdUse__6E01572D" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_UserPermissions_UserId" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK__UserPerta__IdUse__6A30C649" />
+        <AssociationConnector Association="SiDedy_Default_v1Model.FK_UserRoles_UserId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

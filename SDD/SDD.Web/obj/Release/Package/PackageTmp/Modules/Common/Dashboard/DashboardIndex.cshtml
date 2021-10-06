@@ -1,0 +1,112 @@
+﻿@model SDD.Common.DashboardPageModel
+@{
+    ViewData["Title"] = "Dashboard";
+    ViewData["PageId"] = "Dashboard";
+}
+
+@section Head {
+    @Html.StyleBundle("Pages/Dashboard")
+    @Html.ScriptBundle("Pages/Dashboard")
+}
+
+@section ContentHeader {
+    <h1>@LocalText.Get("Navigation.Dashboard")<small>@Html.Raw(Texts.Site.Dashboard.ContentDescription)</small></h1>
+}
+
+<div class="container-fluid" id="chartadmin">
+    @*<div class="row">
+
+            <div class="col-lg-12 col-xs-12">
+
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Dashboard Premi Bulanan</h3>
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body chart-responsive">
+                        <div class="chart" id="bar-chart" style="height: 500px;"></div>
+                    </div><!-- /.box-body -->
+                </div><!-- /.box -->
+            </div>
+        </div>*@
+    <div class="row">
+
+        <div class="col-lg-6 col-xs-6">
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Total Penghasilan All By Desa</h3>
+                    <div class="box-tools pull-right">
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body chart-responsive">
+                    <div class="chart" id="sales-chart" style="height: 600px; position: relative;"></div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>
+        <div class="col-lg-6 col-xs-6">
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Total Penghasilan All By Pekerjaan</h3>
+                    <div class="box-tools pull-right">
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body chart-responsive">
+                    <div class="chart" id="sales-chartpekerjaan" style="height: 600px; position: relative;"></div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>
+
+    </div>
+
+</div>
+<script>
+            $(function () {
+
+
+              var DataLabelsDonutProduk = [];
+        var DataChartDonutProduk = [];
+            @foreach (var TotalPenghasilanDesa in Model.TotalPenghasilanDesa){
+                @: var Produk='@TotalPenghasilanDesa.Namadesa';
+                @: var CountTransaksi = @TotalPenghasilanDesa.CountTransaksi;
+                @: var Premi = @TotalPenghasilanDesa.TotalPenghasilan;
+
+                @: DataChartDonutProduk.push({ label: Produk, value: Premi });
+            }
+        var donut = new Morris.Donut({
+            element: 'sales-chart',
+            resize: true,
+            colors: ["#3c8dbc", "#f56954", "#FF00FF", "#00a65a"],
+            data: DataChartDonutProduk,
+            hideHover: 'auto'
+        });
+            });
+</script>
+<script>
+            $(function () {
+
+
+              var DataLabelsDonutProduk2 = [];
+        var DataChartDonutProduk2 = [];
+            @foreach (var TotalPenghasilanPekerjaan in Model.TotalPenghasilanPekerjaan){
+                @: var Produk='@TotalPenghasilanPekerjaan.NamaPekerjaan';
+                @: var CountTransaksi = @TotalPenghasilanPekerjaan.CountTransaksi;
+                @: var Premi = @TotalPenghasilanPekerjaan.TotalPenghasilan;
+
+                @: DataChartDonutProduk2.push({ label: Produk, value: Premi });
+            }
+        var donut = new Morris.Donut({
+            element: 'sales-chartpekerjaan',
+            resize: true,
+            colors: ["#3c8dbc", "#f56954", "#FF00FF", "#00a65a"],
+            data: DataChartDonutProduk2,
+            hideHover: 'auto'
+        });
+            });
+</script>

@@ -40,6 +40,38 @@ namespace SDD.Transaction.Repositories
         private class MySaveHandler : SaveRequestHandler<MyRow> { }
         private class MyDeleteHandler : DeleteRequestHandler<MyRow> { }
         private class MyRetrieveHandler : RetrieveRequestHandler<MyRow> { }
-        private class MyListHandler : ListRequestHandler<MyRow> { }
+        private class MyListHandler : ListRequestHandler<MyRow> {
+            protected override void ApplyFilters(SqlQuery query)
+            {
+                base.ApplyFilters(query);
+
+                var iduser = ((UserDefinition)Authorization.UserDefinition).UserId;
+                int RoleId = 0;
+                try
+                {
+                    RoleId = ((UserDefinition)Serenity.Authorization.UserDefinition).Roles[0].RoleId;
+                }
+                catch (System.Exception e)
+                {
+                    RoleId = 0;
+                }
+
+                if (iduser == 1)
+                {
+
+                }
+                else
+                {
+
+                    query.Where(fld.IdUser == iduser);
+
+
+
+                }
+
+
+
+            }
+        }
     }
 }
