@@ -13,14 +13,14 @@ namespace SDD.Transaction.Columns
     [BasedOnRow(typeof(Entities.ParentMessageRow), CheckNames = true)]
     public class ParentMessageColumns
     {
-        [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
+        [EditLink, DisplayName("Db.Shared.RecordId"), AlignCenter]
         public Int32 IdParentMessage { get; set; }
         [EditLink]
         [Width(300)]
         public String Title { get; set; }
-        [Width(500)]
+        [Visible(false)]
         public String Message { get; set; }
-        [Width(500)]
+        [Width(400)]
         public String Body { get; set; }
         public DateTime TimeStamp { get; set; }
         [Width(300)]

@@ -1,8 +1,9 @@
 ﻿namespace SDD.Transaction {
     export interface ParentMessageForm {
+        Option1: Serenity.RadioButtonEditor;
         Title: Serenity.StringEditor;
-        Message: MyCustomEditor;
-        Body: MyCustomEditor;
+        Message: Serenity.StringEditor;
+        Body: Serenity.TextAreaEditor;
         Detail: FcmMessageGrid;
     }
 
@@ -17,15 +18,17 @@
                 ParentMessageForm.init = true;
 
                 var s = Serenity;
-                var w0 = s.StringEditor;
-                var w1 = MyCustomEditor;
-                var w2 = FcmMessageGrid;
+                var w0 = s.RadioButtonEditor;
+                var w1 = s.StringEditor;
+                var w2 = s.TextAreaEditor;
+                var w3 = FcmMessageGrid;
 
                 Q.initFormType(ParentMessageForm, [
-                    'Title', w0,
+                    'Option1', w0,
+                    'Title', w1,
                     'Message', w1,
-                    'Body', w1,
-                    'Detail', w2
+                    'Body', w2,
+                    'Detail', w3
                 ]);
             }
         }

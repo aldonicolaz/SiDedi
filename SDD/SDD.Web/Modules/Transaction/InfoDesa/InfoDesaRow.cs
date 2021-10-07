@@ -38,21 +38,21 @@ namespace SDD.Transaction.Entities
             set { Fields.Image[this] = value; }
         }
 
-        [DisplayName("Body Info"), Size(900)]
+        [DisplayName("Informasi"), Size(900)]
         public String BodyInfo
         {
             get { return Fields.BodyInfo[this]; }
             set { Fields.BodyInfo[this] = value; }
         }
 
-        [DisplayName("Title Info"), Size(255)]
+        [DisplayName("Title"), Size(255)]
         public String TitleInfo
         {
             get { return Fields.TitleInfo[this]; }
             set { Fields.TitleInfo[this] = value; }
         }
 
-        [DisplayName("Short Deskripsi Info"), Size(255)]
+        [DisplayName(" Deskripsi "), Size(255)]
         public String ShortDescInfo
         {
             get { return Fields.ShortDescInfo[this]; }
@@ -66,7 +66,7 @@ namespace SDD.Transaction.Entities
             set { Fields.Timestamp[this] = value; }
         }
 
-        [DisplayName("User Insert"), Expression("jIdUser.[DisplayName]")]
+        [DisplayName("Nama Author"), Expression("jIdUser.[DisplayName]")]
         public String DisplayName
         {
             get { return Fields.DisplayName[this]; }

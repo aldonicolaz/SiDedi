@@ -19,6 +19,10 @@ namespace SDD.View {
             this.toolbar.findButton(".delete-button").remove();
             this.toolbar.findButton(".save-and-close-button").remove();
             this.toolbar.findButton(".apply-changes-button").remove();
+
+
+
+
         }
     }
 }

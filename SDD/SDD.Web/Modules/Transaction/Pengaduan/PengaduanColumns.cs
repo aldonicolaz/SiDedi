@@ -16,7 +16,7 @@ namespace SDD.Transaction.Columns
         [EditLink, DisplayName("Db.Shared.RecordId"), AlignCenter, Width(50)]
         
         public Int32 IdPengaduan { get; set; }
-        [DisplayName("Nama"), Width(120)]
+        [DisplayName("Nama"), Width(250)]
         public String IdUserPengaduDisplayName { get; set; }
         [DisplayName("Desa"), Width(120)]
         
@@ -24,9 +24,9 @@ namespace SDD.Transaction.Columns
         [DisplayName("Lembaga Pengaduan"), Width(200)]
         public String IdMasterTujuanNamaTujuan { get; set; }
         [EditLink]
-        [DisplayName("Perihal"), Width(300)]
+        [DisplayName("Perihal"), Width(150)]
         public String PerihalPengaduan { get; set; }
-        [DisplayName("Foto"), Width(300)]
+        [DisplayName("Foto"), Width(150)]
         public String FotoDokumen { get; set; }
         [Width(200),QuickFilter]
         public DateTime Timestamp { get; set; }

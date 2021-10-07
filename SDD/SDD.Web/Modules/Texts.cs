@@ -31,67 +31,67 @@ namespace SDD
             {
                 public static class ChangePassword
                 {
-                    public static LocalText FormTitle = "Change Password";
-                    public static LocalText SubmitButton = "Change Password";
-                    public static LocalText Success = "Your password is changed.";
+                    public static LocalText FormTitle = "Ganti Kata Sandi";
+                    public static LocalText SubmitButton = "Ganti Kata Sandi";
+                    public static LocalText Success = "Kata Sandi berhasil diubah.";
                 }
 
                 public static class ForgotPassword
                 {
-                    public static LocalText FormInfo = "Please enter the e-mail you used to signup.";
-                    public static LocalText FormTitle = "Forgot My Password";
-                    public static LocalText SubmitButton = "Reset My Password";
-                    public static LocalText Success = "An e-mail with password reset instructions is sent to your e-mail address.";
-                    public static LocalText BackToLogin = "I remember my password";
+                    public static LocalText FormInfo = "Silahkan masukkan Email terdaftar.";
+                    public static LocalText FormTitle = "Lupa Kata Sandi";
+                    public static LocalText SubmitButton = "Reset Kata Sandi";
+                    public static LocalText Success = "Instruksi Reset Kata Sandi berhasil dikirim ke Email terdaftar.";
+                    public static LocalText BackToLogin = "Saya sudah mengingat Kata Sandi";
                 }
 
                 public static class ResetPassword
                 {
-                    public static LocalText EmailSubject = "Reset Your SIDEDI Password";
-                    public static LocalText FormTitle = "Reset Password";
-                    public static LocalText SubmitButton = "Reset Password";
-                    public static LocalText Success = "Your password is changed. Please login with your new password.";
-                    public static LocalText BackToLogin = "I remember my password. Don't reset it!";
+                    public static LocalText EmailSubject = "Reset Kata Sandi";
+                    public static LocalText FormTitle = "Reset Kata Sandi";
+                    public static LocalText SubmitButton = "Reset Kata Sandi";
+                    public static LocalText Success = "Kata Sandi anda berhasil diubah.";
+                    public static LocalText BackToLogin = "Saya sudah mengingat Kata Sandi. Batal Reset!";
                 }
 
                 public static class Login
                 {
-                    public static LocalText FormTitle = "Welcome to SIDEDI Aplication";
-                    public static LocalText SignInButton = "Sign In";
-                    public static LocalText ForgotPassword = "Forgot password?";
-                    public static LocalText SignUpButton = "Register a new account";
-                    public static LocalText RememberMe = "Remember Me";
-                    public static LocalText OR = "OR";
-                    public static LocalText FacebookButton = "Sign in using Facebook";
-                    public static LocalText GoogleButton = "Sign in using Google+";
+                    public static LocalText FormTitle = "SIDEDI Desa Digital";
+                    public static LocalText SignInButton = "Masuk";
+                    public static LocalText ForgotPassword = "Lupa Kata Sandi?";
+                    public static LocalText SignUpButton = "Daftar Baru";
+                    public static LocalText RememberMe = "Ingat saya";
+                    public static LocalText OR = "Atau";
+                    public static LocalText FacebookButton = "Masuk melalui Facebook";
+                    public static LocalText GoogleButton = "Masuk melalui Google+";
                 }
 
                 public static class SignUp
                 {
                     public static LocalText ActivateEmailSubject = "Activate Your SIDEDI Account";
-                    public static LocalText ActivationCompleteMessage = "Your account is now activated. " + 
-                        "Use the e-mail and password you used while signing up to login.";
-                    public static LocalText FormInfo = "Enter your details to create a free account.";
-                    public static LocalText FormTitle = "Sign up for SIDEDI";
-                    public static LocalText SubmitButton = "Sign Up";
-                    public static LocalText Success = "An e-mail with instructions to active your account is " + 
-                        "sent to your e-mail address. Please check your e-mails.";
+                    public static LocalText ActivationCompleteMessage = "Akunmu berhasil diaktivasi. " + 
+                        "Silahkan gunakan Email dan Password yang baru anda daftarkan";
+                    public static LocalText FormInfo = "Silahkan Isi data diri untuk membuat Akun.";
+                    public static LocalText FormTitle = "Daftar Akun SIDEDI";
+                    public static LocalText SubmitButton = "Daftar";
+                    public static LocalText Success = "Instruksi untuk aktivasi akun SIDEDI  " + 
+                        "Sudah dikirim ke Email yang anda daftarkan. Silahkan cek Inbox Email anda.";
 
-                    public static LocalText DisplayName = "Full Name";
+                    public static LocalText DisplayName = "Nama Lengkap";
                     public static LocalText Email = "E-mail";
-                    public static LocalText ConfirmEmail = "Confirm Email";
-                    public static LocalText Password = "Password";
-                    public static LocalText ConfirmPassword = "Confirm Password";
+                    public static LocalText ConfirmEmail = "Konfirmasi Email";
+                    public static LocalText Password = "Kata Sandi";
+                    public static LocalText ConfirmPassword = "Konfirmasi Kata Sandi";
 
-                    public static LocalText AcceptTerms = "I agree to the terms";
-                    public static LocalText BackToLogin = "I already have a membership";
+                    public static LocalText AcceptTerms = "Saya setuju dengan persyaratan";
+                    public static LocalText BackToLogin = "Saya sudah memiliki akun";
                 }
             }
         }
 
         public static class Navigation
         {
-            public static LocalText LogoutLink = "Logout";
+            public static LocalText LogoutLink = "Keluar";
             public static LocalText SiteTitle = "SIDEDI";
         }
 
@@ -99,11 +99,11 @@ namespace SDD
         {
             public static class AccessDenied
             {
-                public static LocalText PageTitle = "Unauthorized Access";
-                public static LocalText LackPermissions = "You don't have required permissions to access this page!";
-                public static LocalText NotLoggedIn = "You need to be logged in to access this page!";
-                public static LocalText ClickToChangeUser = "click here to login with another user...";
-                public static LocalText ClickToLogin = "clik here to return to login page...";
+                public static LocalText PageTitle = "Akses Ditolak";
+                public static LocalText LackPermissions = "Anda tidak memiliki izin akses ke Page ini!";
+                public static LocalText NotLoggedIn = "Anda harus login terlebih dahulu untuk masuk k Page ini";
+                public static LocalText ClickToChangeUser = "Masuk dengan akun lain";
+                public static LocalText ClickToLogin = "Kembali ke Halaman Login";
             }
 
             public static class Dashboard
@@ -116,7 +116,7 @@ namespace SDD
             public static class BasicProgressDialog
             {
                 public static LocalText CancelTitle = "Operation cancelled. Waiting for in progress calls to complete...";
-                public static LocalText PleaseWait = "Please wait...";
+                public static LocalText PleaseWait = "Menunggu...";
             }
 
             public static class BulkServiceAction
@@ -132,30 +132,30 @@ namespace SDD
 
             public static class UserDialog
             {
-                public static LocalText EditPermissionsButton = "Edit Permissions";
-                public static LocalText EditRolesButton = "Edit Roles";
+                public static LocalText EditPermissionsButton = "Ubah Akses";
+                public static LocalText EditRolesButton = "Ubah Roles";
             }
 
             public static class UserRoleDialog
             {
-                public static LocalText DialogTitle = "Edit User Roles ({0})";
-                public static LocalText SaveSuccess = "Updated user roles.";
+                public static LocalText DialogTitle = "Ubah User Roles ({0})";
+                public static LocalText SaveSuccess = "Berhasil Mengubah user roles.";
             }
 
             public static class UserPermissionDialog
             {
-                public static LocalText DialogTitle = "Edit User Permissions ({0})";
+                public static LocalText DialogTitle = "Ubah User Akses ({0})";
                 public static LocalText SaveSuccess = "Updated user permissions.";
-                public static LocalText Permission = "Permission";
+                public static LocalText Permission = "Akses";
                 public static LocalText Grant = "Grant";
                 public static LocalText Revoke = "Revoke";
             }
 
             public static class RolePermissionDialog
             {
-                public static LocalText EditButton = "Edit Permissions";
-                public static LocalText DialogTitle = "Edit Role Permissions ({0})";
-                public static LocalText SaveSuccess = "Updated role permissions.";
+                public static LocalText EditButton = "Ubah Akes";
+                public static LocalText DialogTitle = "Ubah Role Akses ({0})";
+                public static LocalText SaveSuccess = "Updated role Akes.";
             }
 
             public static class Layout
@@ -188,14 +188,14 @@ namespace SDD
 
         public static partial class Validation
         {
-            public static LocalText AuthenticationError = "Invalid username or password!";
-            public static LocalText CurrentPasswordMismatch = "Your current password is not valid!";
-            public static LocalText MinRequiredPasswordLength = "Entered password doesn't have enough characters (min {0})!";
-            public static LocalText InvalidResetToken = "Your token to reset your password is invalid or has expired!";
-            public static LocalText InvalidActivateToken = "Your token to activate your account is invalid or has expired!";
-            public static LocalText CantFindUserWithEmail = "Can't find a user with that e-mail adress!";
-            public static LocalText EmailInUse = "Another user with this e-mail exists!";
-            public static LocalText EmailConfirm = "Emails entered doesn't match!";
+            public static LocalText AuthenticationError = "Username dan Kata Sandi Salah!";
+            public static LocalText CurrentPasswordMismatch = "Kata Sandi Sebelumnya Tidak Benar!";
+            public static LocalText MinRequiredPasswordLength = "Karakter Password Terlalu Pendek (min {0})!";
+            public static LocalText InvalidResetToken = "Masa berlaku Reset Kata Sandi sudah berakhir!";
+            public static LocalText InvalidActivateToken = "Masa berlaku  aktivasi Email sudah berakhir!!";
+            public static LocalText CantFindUserWithEmail = "Tidak menemukan user dengan email tersebut!";
+            public static LocalText EmailInUse = "Email sudah terdaftar!";
+            public static LocalText EmailConfirm = "Email konfirmasi harus sama!";
             public static LocalText DeleteForeignKeyError = "Can't delete record. '{0}' table has " +
                 "records that depends on this one!";
             public static LocalText SavePrimaryKeyError = "Can't save record. There is another record with the same {1} value!";

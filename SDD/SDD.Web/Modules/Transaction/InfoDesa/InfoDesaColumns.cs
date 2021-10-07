@@ -13,7 +13,7 @@ namespace SDD.Transaction.Columns
     [BasedOnRow(typeof(Entities.InfoDesaRow), CheckNames = true)]
     public class InfoDesaColumns
     {
-        [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
+        [EditLink, DisplayName("Db.Shared.RecordId"), AlignCenter]
         public Int32 IdInfoDesa { get; set; }
         [Visible(false)]
         public Int32 IdUser { get; set; }

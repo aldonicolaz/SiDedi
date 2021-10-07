@@ -43,14 +43,14 @@ namespace SDD.View.Entities
             set { Fields.IdUserAparat[this] = value; }
         }
 
-        [DisplayName("Info"), Size(255), QuickSearch]
+        [DisplayName("Informasi Formulir"), Size(255), QuickSearch]
         public String Info
         {
             get { return Fields.Info[this]; }
             set { Fields.Info[this] = value; }
         }
 
-        [DisplayName("Time Stamp"), DisplayFormat("dd-MM-yyyy HH:mm:ss")]
+        [DisplayName("Tanggal & Waktu"), DisplayFormat("dd-MM-yyyy HH:mm:ss")]
         public DateTime? TimeStamp
         {
             get { return Fields.TimeStamp[this]; }
@@ -78,7 +78,7 @@ namespace SDD.View.Entities
             set { Fields.IdFormulir[this] = value; }
         }
 
-        [DisplayName("Formulir"), Size(255), NotNull]
+        [DisplayName("Link Formulir"), Size(255), NotNull]
         public String Formulir
         {
             get { return Fields.Formulir[this]; }
@@ -93,7 +93,7 @@ namespace SDD.View.Entities
             set { Fields.Dokumen[this] = value; }
         }
 
-        [DisplayName("Nama Status"), Size(255)]
+        [DisplayName("Status Formulir"), Size(255)]
         public String NamaStatus
         {
             get { return Fields.NamaStatus[this]; }

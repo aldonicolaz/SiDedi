@@ -13,16 +13,16 @@ namespace SDD.View.Columns
     [BasedOnRow(typeof(Entities.VChartPenghasilanDesaRow), CheckNames = true)]
     public class VChartPenghasilanDesaColumns
     {
-        [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
+        [EditLink, DisplayName("Db.Shared.RecordId"), AlignCenter]
         public Int64 IdNumber { get; set; }
         [LookupEditor("Master.MasterDesa"), Visible(false), QuickFilter]
         public Int64 IdDesa { get; set; }
        
        
         [EditLink]
-        [Width(300)]
+        [Width(400)]
         public String Namadesa { get; set; }
-        [Width(300)]
+        [Width(400)]
         public Decimal TotalPenghasilan { get; set; }
     }
 }

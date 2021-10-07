@@ -12,16 +12,18 @@ namespace SDD.Transaction.Forms
     [FormScript("Transaction.ParentMessage")]
     [BasedOnRow(typeof(Entities.ParentMessageRow), CheckNames = true)]
     public class ParentMessageForm
-    {
-        [Category("Message")]
-       
+    {   
+        [RadioButtonEditor(EnumKey = "Transaction.EnumSend"),DisplayName ("Pilihan Pengiriman")]
+        public Send Option1 { get; set; }
+        [Category("Broadcast Message")]
+        [HalfWidth]
         public String Title { get; set; }
-        [MyCustomEditor]
+        [Visible(true)]
         public String Message { get; set; }
-
-        [MyCustomEditor]
+        [TextAreaEditor(Rows = 7 ,Cols = 7)]
+       
         public String Body { get; set; }
-        [Category("Detail Message")]
+        [Category("Detail Broadcast")]
         [FcmMessageGrid]
         public List<Entities.FcmMessageRow> Detail { get; set; }
         //public DateTime TimeStamp { get; set; }

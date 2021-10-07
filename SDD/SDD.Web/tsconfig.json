@@ -17,5 +17,5 @@
     "./Imports/",
     "./Modules/",
     "./Scripts/typings/"
-  ]
+, "Modules/Transaction/ParentMessage/.cs"  ]
 }

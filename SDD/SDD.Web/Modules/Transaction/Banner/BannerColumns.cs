@@ -13,20 +13,20 @@ namespace SDD.Transaction.Columns
     [BasedOnRow(typeof(Entities.BannerRow), CheckNames = true)]
     public class BannerColumns
     {
-        [EditLink, DisplayName("ID"), AlignRight]
+        [EditLink, DisplayName("ID"), AlignCenter]
         public Int32 IdBanner { get; set; }
 
        // public String Image { get; set; }
-        public String UrlImage { get; set; }
+        [Width(300)]
+        public String DisplayName { get; set; }
         [Visible(false)]
         public Int32 IdUser { get; set; }
         [EditLink]
-        [Width(200)]
+        [Width(150)]
         public GetTrackStatus StatusAktif { get; set; }
         [Width(300)]
         public String Description { get; set; }
         [Width(300)]
-        public String DisplayName { get; set; }
-     
+        public String UrlImage { get; set; }
     }
 }

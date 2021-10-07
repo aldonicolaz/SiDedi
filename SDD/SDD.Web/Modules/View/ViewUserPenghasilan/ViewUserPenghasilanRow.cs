@@ -64,7 +64,7 @@ namespace SDD.View.Entities
             set { Fields.PhoneNumber[this] = value; }
         }
 
-        [DisplayName("No.WA"), Size(255), QuickSearch]
+        [DisplayName("WhatsApp"), Size(255), QuickSearch]
         public String WaNumber
         {
             get { return Fields.WaNumber[this]; }
@@ -85,7 +85,7 @@ namespace SDD.View.Entities
             set { Fields.IdPekerjaan[this] = value; }
         }
 
-        [DisplayName("Nama Pekerjaan"), Size(255)]
+        [DisplayName("Pekerjaan"), Size(255)]
         public String NamaPekerjaan
         {
             get { return Fields.NamaPekerjaan[this]; }
@@ -99,7 +99,7 @@ namespace SDD.View.Entities
             set { Fields.IdDesa[this] = value; }
         }
 
-        [DisplayName("Nama Desa"), Size(255)]
+        [DisplayName("Desa"), Size(255)]
         public String NamaDesa
         {
             get { return Fields.NamaDesa[this]; }
@@ -113,7 +113,7 @@ namespace SDD.View.Entities
             set { Fields.IdKecamatan[this] = value; }
         }
 
-        [DisplayName("Nama Kecamatan"), Size(255)]
+        [DisplayName("Kecamatan"), Size(255)]
         public String NamaKecamatan
         {
             get { return Fields.NamaKecamatan[this]; }
@@ -127,7 +127,7 @@ namespace SDD.View.Entities
             set { Fields.IdKabupaten[this] = value; }
         }
 
-        [DisplayName("Nama Kabupaten"), Size(255)]
+        [DisplayName("Kabupaten"), Size(255)]
         public String NamaKabupaten
         {
             get { return Fields.NamaKabupaten[this]; }
@@ -141,7 +141,7 @@ namespace SDD.View.Entities
             set { Fields.IdPropinsi[this] = value; }
         }
 
-        [DisplayName("Nama Propinsi"), Size(255)]
+        [DisplayName("Propinsi"), Size(255)]
         public String NamaPropinsi
         {
             get { return Fields.NamaPropinsi[this]; }

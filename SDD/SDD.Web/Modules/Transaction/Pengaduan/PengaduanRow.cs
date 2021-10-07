@@ -24,7 +24,7 @@ namespace SDD.Transaction.Entities
             set { Fields.IdPengaduan[this] = value; }
         }
 
-        [DisplayName("Detail"), MasterDetailRelation(foreignKey: "IdPengaduan"), NotMapped]
+        [DisplayName("Detail Pengaduan"), MasterDetailRelation(foreignKey: "IdPengaduan"), NotMapped]
         public System.Collections.Generic.List<DetailPengaduanRow> DetailPengaduan
         {
             get { return Fields.DetailPengaduan[this]; }
@@ -67,7 +67,7 @@ namespace SDD.Transaction.Entities
             set { Fields.FotoDokumen[this] = value; }
         }
 
-        [DisplayName("Tanggal"),DisplayFormat("dd/mm/yyyy HH:mm")]
+        [DisplayName("Tanggal & Waktu"),DisplayFormat("dd/mm/yyyy HH:mm")]
         public DateTime? Timestamp
         {
             get { return Fields.Timestamp[this]; }

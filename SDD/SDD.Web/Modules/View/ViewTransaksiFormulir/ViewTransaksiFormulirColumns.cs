@@ -13,7 +13,7 @@ namespace SDD.View.Columns
     [BasedOnRow(typeof(Entities.ViewTransaksiFormulirRow), CheckNames = true)]
     public class ViewTransaksiFormulirColumns
     {
-        [EditLink, DisplayName("ID"), AlignRight]
+        [EditLink, DisplayName("ID"), AlignCenter]
         public Int32 IdTransaksi { get; set; }
         [Visible(false)]
         public Int32 IdTransaksiForm { get; set; }
@@ -29,13 +29,13 @@ namespace SDD.View.Columns
         public Int32 IdStatus { get; set; }
         [Visible(false)]
         public Int32 IdFormulir { get; set; }
-        [Width(300)]
+        [Width(200)]
         public String Formulir { get; set; }
-        [Width(300)]
+        [Width(300),Visible(false)]
         public String Dokumen { get; set; }
-        [Width(300)]
+        [Width(200)]
         public String NamaStatus { get; set; }
-        [Width(300)]
+        [Width(200)]
         public String Info { get; set; }
         [QuickFilter,Width(200)]
         public DateTime TimeStamp { get; set; }

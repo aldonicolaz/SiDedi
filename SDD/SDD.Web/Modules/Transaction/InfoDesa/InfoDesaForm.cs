@@ -14,12 +14,13 @@ namespace SDD.Transaction.Forms
     public class InfoDesaForm
     {
        // public Int32 IdUser { get; set; }
-       
+       [HalfWidth]
         public String TitleInfo { get; set; }
-        [MyCustomEditor]
+        [TextAreaEditor (Rows = 5,Cols =4)]
         public String ShortDescInfo { get; set; }
-        [MyCustomEditor]
+        [TextAreaEditor(Rows = 5, Cols = 4)]
         public String BodyInfo { get; set; }
+        [HalfWidth]
         public String Image { get; set; }
 
 

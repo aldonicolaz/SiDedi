@@ -28,7 +28,7 @@ namespace SDD.Transaction.Entities
             get { return Fields.Image[this]; }
             set { Fields.Image[this] = value; }
         }
-        [DisplayName("Url Image"), Size(900)]
+        [DisplayName("Link Banner"), Size(900)]
         public String UrlImage
         {
             get { return Fields.UrlImage[this]; }
@@ -42,7 +42,7 @@ namespace SDD.Transaction.Entities
             set { Fields.IdUser[this] = value; }
         }
 
-        [DisplayName("Status Aktif")]
+        [DisplayName(" Status ")]
         public Int32? StatusAktif
         {
             get { return Fields.StatusAktif[this]; }
@@ -55,7 +55,7 @@ namespace SDD.Transaction.Entities
             get { return Fields.Description[this]; }
             set { Fields.Description[this] = value; }
         }
-        [DisplayName("User Insert"), Expression("jIdUser.[DisplayName]")]
+        [DisplayName("Nama Author"), Expression("jIdUser.[DisplayName]")]
         public String DisplayName
         {
             get { return Fields.DisplayName[this]; }

@@ -14,5 +14,20 @@ namespace SDD.Transaction {
 
         protected form = new FcmMessageUserForm(this.idPrefix);
 
+        protected afterLoadEntity() {
+            super.afterLoadEntity();
+
+            var DialogNew = this.isNew();
+
+
+
+
+            if (!DialogNew) {
+                this.form.IdUser.value = Authorization.userDefinition.UserId;
+                this.form.TimeStamp.valueAsDate;
+
+
+            }
+        }
     }
 }

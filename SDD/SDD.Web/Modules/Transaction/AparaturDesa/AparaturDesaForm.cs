@@ -16,12 +16,16 @@ namespace SDD.Transaction.Forms
         //  public Int32 IdUser { get; set; }
         //[LookupEditor("Master.MasterDesa"),Visible(false)]
         //public Int64 IdDesa { get; set; }
-        [LookupEditor("Master.MasterJabatan")]
+
+        [LookupEditor("Master.MasterJabatan"),MediumHalfWidth]
         public Int32 IdJabatan { get; set; }
+        [MediumHalfWidth]
         public StatusAparat StatusAparatur { get; set; }
+        [HalfWidth]
         public DateTime PeriodeAwal { get; set; }
+        [HalfWidth]
         public DateTime PeriodeAkhir { get; set; }
-        [TextAreaEditor(Rows =6)]
+        [TextAreaEditor(Rows =6, Cols = 5)]
         public String DescAparaturDesa { get; set; }
     }
 }

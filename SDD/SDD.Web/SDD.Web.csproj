@@ -559,6 +559,9 @@
     <Content Include="Content\serenity\serenity.editors.css" />
     <Content Include="Content\serenity\serenity.jquery-ui.messagedialogs.css" />
     <Content Include="Content\simple-line-icons.css" />
+    <Content Include="Content\site\images\sidedi-logo-40.png" />
+    <Content Include="Content\site\images\sidedi-logo2-12.png" />
+    <Content Include="Content\site\images\sidedi-logo2-13.png" />
     <Content Include="Content\slick-default-theme.css" />
     <Content Include="Content\slick.columnpicker.css" />
     <Content Include="Content\slick.grid.css" />
@@ -1283,6 +1286,9 @@
       <DependentUpon>ServerTypings.tt</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="Imports\ServerTypings\Transaction.PengaduanColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Transaction.Send.ts">
       <DependentUpon>ServerTypings.tt</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="Imports\ServerTypings\Transaction.StatusAparat.ts">
@@ -3019,6 +3025,7 @@
     <Compile Include="Modules\Transaction\FormulirAktaKelahiran\JenisKelahiran.cs" />
     <Compile Include="Modules\Transaction\FormulirKk\LookupFlowForm.cs" />
     <Compile Include="Modules\Transaction\Forum\MyEnumStatushide.cs" />
+    <Compile Include="Modules\Transaction\ParentMessage\EnumSend.cs" />
     <Compile Include="Modules\Transaction\TransaksiStatus\LookupUserDesa.cs" />
     <Compile Include="Modules\Transaction\UserKaryawan\GetTypePerusahaan.cs" />
     <Compile Include="Modules\Transaction\UserPerikananPeternakan\LookupBudidaya.cs" />
@@ -3553,7 +3560,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>52353</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/SDD.Web</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

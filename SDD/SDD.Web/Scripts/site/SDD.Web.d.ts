@@ -3606,8 +3606,8 @@ declare namespace SDD.Transaction {
 declare namespace SDD.Transaction {
     interface InfoDesaForm {
         TitleInfo: Serenity.StringEditor;
-        ShortDescInfo: MyCustomEditor;
-        BodyInfo: MyCustomEditor;
+        ShortDescInfo: Serenity.TextAreaEditor;
+        BodyInfo: Serenity.TextAreaEditor;
         Image: Serenity.ImageUploadEditor;
     }
     class InfoDesaForm extends Serenity.PrefixedContext {
@@ -3764,9 +3764,10 @@ declare namespace SDD.Transaction {
 }
 declare namespace SDD.Transaction {
     interface ParentMessageForm {
+        Option1: Serenity.RadioButtonEditor;
         Title: Serenity.StringEditor;
-        Message: MyCustomEditor;
-        Body: MyCustomEditor;
+        Message: Serenity.StringEditor;
+        Body: Serenity.TextAreaEditor;
         Detail: FcmMessageGrid;
     }
     class ParentMessageForm extends Serenity.PrefixedContext {
@@ -3966,6 +3967,12 @@ declare namespace SDD.Transaction {
             Retrieve = "Transaction/Pengaduan/Retrieve",
             List = "Transaction/Pengaduan/List"
         }
+    }
+}
+declare namespace SDD.Transaction {
+    enum Send {
+        Individual = 0,
+        All = 1
     }
 }
 declare namespace SDD.Transaction {
@@ -6482,6 +6489,7 @@ declare namespace SDD.Transaction {
         protected getInsertPermission(): string;
         protected getUpdatePermission(): string;
         protected form: FcmMessageUserForm;
+        protected afterLoadEntity(): void;
     }
 }
 declare namespace SDD.Transaction {
@@ -6714,7 +6722,7 @@ declare namespace SDD.Transaction {
         protected getInsertPermission(): string;
         protected getUpdatePermission(): string;
         protected form: ParentMessageForm;
-        constructor();
+        constructor(container: JQuery);
     }
 }
 declare namespace SDD.Transaction {

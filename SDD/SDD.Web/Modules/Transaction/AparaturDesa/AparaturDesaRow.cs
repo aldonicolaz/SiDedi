@@ -79,7 +79,7 @@ namespace SDD.Transaction.Entities
             set { Fields.IdUserUsername[this] = value; }
         }
 
-        [DisplayName("Display Name"), Expression("jIdUser.[DisplayName]")]
+        [DisplayName("Nama Aparatur"), Expression("jIdUser.[DisplayName]")]
         public String IdUserDisplayName
         {
             get { return Fields.IdUserDisplayName[this]; }

@@ -14,9 +14,16 @@ namespace SDD.Transaction.Endpoints
     public class ParentMessageController : ServiceEndpoint
     {
         [HttpPost, AuthorizeCreate(typeof(MyRow))]
-        public SaveResponse Create(IUnitOfWork uow, SaveRequest<MyRow> request)
+        public SaveResponse Create( SaveRequest<MyRow> request)
         {
-            return new MyRepository().Create(uow, request);
+            using (var connection = SqlConnections.NewByKey("SDD_Connection"))
+            using (var uow = new UnitOfWork(connection))
+            {
+                var result = new MyRepository().Create(uow, request);
+                //uow.Commit();
+                return result;
+            }
+            //return new MyRepository().Create(uow, request);
         }
 
         [HttpPost, AuthorizeUpdate(typeof(MyRow))]

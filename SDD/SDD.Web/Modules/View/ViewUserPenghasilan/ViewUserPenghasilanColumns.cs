@@ -13,25 +13,25 @@ namespace SDD.View.Columns
     [BasedOnRow(typeof(Entities.ViewUserPenghasilanRow), CheckNames = true)]
     public class ViewUserPenghasilanColumns
     {
-        [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
+        [EditLink, DisplayName("Db.Shared.RecordId"), AlignCenter]
         public Int64 NumberId { get; set; }
         [EditLink]
-        [Width(300)]
+        [Width(200)]
         public String DisplayName { get; set; }
-        [Width(300)]
+        [Width(200)]
         public String Email { get; set; }
         //public String NoKtp { get; set; }
         //public String NoKk { get; set; }
         //public String PhoneNumber { get; set; }
-        [Width(300)]
+        [Width(200)]
         public String WaNumber { get; set; }
-        [Width(300)]
+        [Width(200)]
         public Decimal TotalHasil { get; set; }
         [Visible(false)]
 
         [LookupEditor("Master.MasterPekerjaan"),QuickFilter]
         public Int32 IdPekerjaan { get; set; }
-        [Width(300)]
+        [Width(100)]
         public String NamaPekerjaan { get; set; }
         [LookupEditor("Master.MasterDesa"), Visible(false),QuickFilter]
         public Int64 IdDesa { get; set; }

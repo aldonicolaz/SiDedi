@@ -1,8 +1,8 @@
 ﻿namespace SDD.Transaction {
     export interface InfoDesaForm {
         TitleInfo: Serenity.StringEditor;
-        ShortDescInfo: MyCustomEditor;
-        BodyInfo: MyCustomEditor;
+        ShortDescInfo: Serenity.TextAreaEditor;
+        BodyInfo: Serenity.TextAreaEditor;
         Image: Serenity.ImageUploadEditor;
     }
 
@@ -18,7 +18,7 @@
 
                 var s = Serenity;
                 var w0 = s.StringEditor;
-                var w1 = MyCustomEditor;
+                var w1 = s.TextAreaEditor;
                 var w2 = s.ImageUploadEditor;
 
                 Q.initFormType(InfoDesaForm, [

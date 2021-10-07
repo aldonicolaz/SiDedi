@@ -2890,7 +2890,7 @@ var SDD;
                     InfoDesaForm.init = true;
                     var s = Serenity;
                     var w0 = s.StringEditor;
-                    var w1 = Transaction.MyCustomEditor;
+                    var w1 = s.TextAreaEditor;
                     var w2 = s.ImageUploadEditor;
                     Q.initFormType(InfoDesaForm, [
                         'TitleInfo', w0,
@@ -3064,14 +3064,16 @@ var SDD;
                 if (!ParentMessageForm.init) {
                     ParentMessageForm.init = true;
                     var s = Serenity;
-                    var w0 = s.StringEditor;
-                    var w1 = Transaction.MyCustomEditor;
-                    var w2 = Transaction.FcmMessageGrid;
+                    var w0 = s.RadioButtonEditor;
+                    var w1 = s.StringEditor;
+                    var w2 = s.TextAreaEditor;
+                    var w3 = Transaction.FcmMessageGrid;
                     Q.initFormType(ParentMessageForm, [
-                        'Title', w0,
+                        'Option1', w0,
+                        'Title', w1,
                         'Message', w1,
-                        'Body', w1,
-                        'Detail', w2
+                        'Body', w2,
+                        'Detail', w3
                     ]);
                 }
                 return _this;
@@ -3193,6 +3195,18 @@ var SDD;
                 };
             });
         })(PengaduanService = Transaction.PengaduanService || (Transaction.PengaduanService = {}));
+    })(Transaction = SDD.Transaction || (SDD.Transaction = {}));
+})(SDD || (SDD = {}));
+var SDD;
+(function (SDD) {
+    var Transaction;
+    (function (Transaction) {
+        var Send;
+        (function (Send) {
+            Send[Send["Individual"] = 0] = "Individual";
+            Send[Send["All"] = 1] = "All";
+        })(Send = Transaction.Send || (Transaction.Send = {}));
+        Serenity.Decorators.registerEnumType(Send, 'SDD.Transaction.Send', 'Transaction.EnumSend');
     })(Transaction = SDD.Transaction || (SDD.Transaction = {}));
 })(SDD || (SDD = {}));
 var SDD;
@@ -5085,7 +5099,7 @@ var SDD;
                     }
                     this.setItems(this.getItems());
                 },
-                enumerable: true,
+                enumerable: false,
                 configurable: true
             });
             Object.defineProperty(PermissionCheckEditor.prototype, "rolePermissions", {
@@ -5102,7 +5116,7 @@ var SDD;
                     }
                     this.setItems(this.getItems());
                 },
-                enumerable: true,
+                enumerable: false,
                 configurable: true
             });
             Object.defineProperty(PermissionCheckEditor.prototype, "implicitPermissions", {
@@ -5122,7 +5136,7 @@ var SDD;
                         }
                     }
                 },
-                enumerable: true,
+                enumerable: false,
                 configurable: true
             });
             PermissionCheckEditor = __decorate([
@@ -5339,7 +5353,7 @@ var SDD;
             set: function (value) {
                 this.byId('ProgressBar').progressbar().progressbar('option', 'max', value);
             },
-            enumerable: true,
+            enumerable: false,
             configurable: true
         });
         Object.defineProperty(BasicProgressDialog.prototype, "value", {
@@ -5349,7 +5363,7 @@ var SDD;
             set: function (value) {
                 this.byId('ProgressBar').progressbar().progressbar('value', value);
             },
-            enumerable: true,
+            enumerable: false,
             configurable: true
         });
         Object.defineProperty(BasicProgressDialog.prototype, "title", {
@@ -5359,7 +5373,7 @@ var SDD;
             set: function (value) {
                 this.element.dialog().dialog('option', 'title', value);
             },
-            enumerable: true,
+            enumerable: false,
             configurable: true
         });
         BasicProgressDialog.prototype.getDialogOptions = function () {
@@ -5774,7 +5788,7 @@ var SDD;
                         return y;
                     }), true);
                 },
-                enumerable: true,
+                enumerable: false,
                 configurable: true
             });
             GridEditorBase.prototype.getGridCanLoad = function () {
@@ -8256,6 +8270,14 @@ var SDD;
             FcmMessageUserDialog.prototype.getDeletePermission = function () { return Transaction.FcmMessageUserRow.deletePermission; };
             FcmMessageUserDialog.prototype.getInsertPermission = function () { return Transaction.FcmMessageUserRow.insertPermission; };
             FcmMessageUserDialog.prototype.getUpdatePermission = function () { return Transaction.FcmMessageUserRow.updatePermission; };
+            FcmMessageUserDialog.prototype.afterLoadEntity = function () {
+                _super.prototype.afterLoadEntity.call(this);
+                var DialogNew = this.isNew();
+                if (!DialogNew) {
+                    this.form.IdUser.value = SDD.Authorization.userDefinition.UserId;
+                    this.form.TimeStamp.valueAsDate;
+                }
+            };
             FcmMessageUserDialog = __decorate([
                 Serenity.Decorators.registerClass()
             ], FcmMessageUserDialog);
@@ -8830,8 +8852,8 @@ var SDD;
     (function (Transaction) {
         var ParentMessageDialog = /** @class */ (function (_super) {
             __extends(ParentMessageDialog, _super);
-            function ParentMessageDialog() {
-                var _this = _super.call(this) || this;
+            function ParentMessageDialog(container) {
+                var _this = _super.call(this, container) || this;
                 _this.form = new Transaction.ParentMessageForm(_this.idPrefix);
                 return _this;
             }

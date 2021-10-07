@@ -15,19 +15,19 @@ namespace SDD.Transaction.Forms
     {
         [Category("Forum")]
         [LookupEditor("Master.MasterForum")]
-        [DisplayName("Jenis Forum")]
+        [DisplayName("Jenis Forum"),Width(150)]
         public Int32 IdMasterForum { get; set; }
 
         //[Visible(false)]
         //public Int32 IdUserInsert { get; set; }
         [MyCustomEditor]
-        [DisplayName("Detail")]
+        [DisplayName("Detail"), Width(300)]
 
         public String DetailForum { get; set; }
         [DisplayName("Foto")]
         public String FotoDokumenForum { get; set; }
         [RadioButtonEditor(EnumKey = "Transaction.MyEnumStatushide")]
-
+        [Visible (true),Width(150)]
         public MyEnumStatushide HiddenUser { get; set; }
 
         [Category("Respon Forum")]

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="SDD_Connection-Web.config Connection String" description="SDD_Connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=192.168.0.8;Initial Catalog=SiDedy_Default_v1;Persist Security Info=True;User ID=sa;Password=warlock@1992" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\Project\ Aspan\\SDD\\SDD\\SDD\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SDD_Connection']/@connectionString" />
-  </parameter>
-  <parameter name="SiDedy_Default_v1Entities-Web.config Connection String" description="SiDedy_Default_v1Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Model.SDD_Model.csdl|res://*/Model.SDD_Model.ssdl|res://*/Model.SDD_Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=192.168.0.8;initial catalog=SiDedy_Default_v1;persist security info=True;user id=sa;password=warlock@1992;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\Project\ Aspan\\SDD\\SDD\\SDD\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SiDedy_Default_v1Entities']/@connectionString" />
-  </parameter>
-</parameters>
